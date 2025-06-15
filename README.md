@@ -32,7 +32,7 @@ Promover o cuidado personalizado das plantas por meio da tecnologia 🌍, evitan
 ---
 ## Observações
 
-Para detalhes da API, veja 'api/docs/API_ROUTES.md'.
+Para detalhes da API, veja '/api/README.md'.
 
 ---
 
