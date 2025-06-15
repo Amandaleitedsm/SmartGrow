@@ -35,7 +35,7 @@ Listar todas as plantas cadastradas na base.
 Obter informações detalhadas de uma planta específica.
 
 - **POST** `/plantas`
-- Cadastrar planta na base (Admin).
+Cadastrar planta na base (Admin).
 
 - **PUT** `/plantas/:id`  
 Editar planta na base (Admin).
