@@ -23,4 +23,4 @@ Aqui está todo o backend da nossa API para o SmartGrow! Você vai encontrar o c
 
 ---
 
-Veja as rotas da API detalhadas em `/docs/API_ROUTES.md`!
+Veja as rotas da API detalhadas em `/docs/API_ROUTES.md` !
