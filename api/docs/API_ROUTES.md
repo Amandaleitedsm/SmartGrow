@@ -37,7 +37,7 @@ Obter informações detalhadas de uma planta específica.
 - **POST** `/plantas`
 Cadastrar planta na base (Admin).
 
-- **PUT** `/plantas/:id`  
+- **PUT** `/plantas/:id`
 Editar planta na base (Admin).
 
 - **DELETE** `/plantas/:id`
