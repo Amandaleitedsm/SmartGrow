@@ -34,14 +34,15 @@ Listar todas as plantas cadastradas na base.
 - **GET** `/plantas/:id`  
 Obter informações detalhadas de uma planta específica.
 
-- **POST** `/plantas`
+- **POST** `/plantas`  
 Cadastrar planta na base (Admin).
 
-- **PUT** `/plantas/:id`
+- **PUT** `/plantas/:id`  
 Editar planta na base (Admin).
 
-- **DELETE** `/plantas/:id`
+- **DELETE** `/plantas/:id`  
 Remover planta da base (Admin).
+
 
 ---
 
