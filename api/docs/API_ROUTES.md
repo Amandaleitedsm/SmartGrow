@@ -18,6 +18,9 @@ Encerrar sessão (opcional, se for usado controle de sessão/token).
 - **GET** `/usuarios/:id`  
 Obter dados do usuário (perfil).
 
+- **GET** `/usuarios`  
+Obter dados de todos os usuários (admin).
+
 - **PUT** `/usuarios/:id`  
 Atualizar dados do usuário.
 
