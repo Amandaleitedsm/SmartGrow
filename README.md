@@ -34,6 +34,7 @@ Promover o cuidado personalizado das plantas por meio da tecnologia 🌍, evitan
 
 Para detalhes da API, veja `/api/README.md`.
 ---
+
 ## 👩‍💻 Autora
 
 Amanda Leite de Souza Machado
