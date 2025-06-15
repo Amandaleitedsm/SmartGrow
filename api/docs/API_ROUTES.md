@@ -34,6 +34,15 @@ Listar todas as plantas cadastradas na base.
 - **GET** `/plantas/:id`  
 Obter informações detalhadas de uma planta específica.
 
+- **POST** `/plantas`
+Cadastrar planta na base (Admin)
+
+- **PUT** `/plantas/:id`
+Editar planta na base (Admin)
+
+- **DELETE** `/plantas/:id`
+Remover planta da base (Admin)
+
 ---
 
 ## 🪴 Plantas dos Usuários
@@ -102,6 +111,9 @@ Obter recomendações geradas a partir de uma análise específica.
 | DELETE | /usuarios/:id                                    | Deletar conta do usuário                          |
 | GET    | /plantas                                         | Listar plantas base                               |
 | GET    | /plantas/:id                                     | Detalhes da planta base                           |
+| POST   | /plantas                                         | Cadastrar planta na base (Admin)                  |
+| PUT    | /plantas/:id                                     | Editar planta na base (Admin)                     |
+| DELETE | /plantas/:id                                     | Remover planta da base (Admin)                    |
 | POST   | /minhas-plantas                                  | Adicionar planta à conta do usuário               |
 | GET    | /minhas-plantas                                  | Listar plantas do usuário                         |
 | GET    | /minhas-plantas/:id                              | Detalhes da planta do usuário                     |
@@ -126,3 +138,4 @@ Obter recomendações geradas a partir de uma análise específica.
 - As recomendações são baseadas nos resultados da análise de cada planta.
 
 ---
+
