@@ -30,7 +30,10 @@ O sistema oferece recomendações personalizadas para cuidados 🌿 e ajuda a ev
 Promover o cuidado personalizado das plantas por meio da tecnologia 🌍, evitando desperdícios e uso abusivo de produtos químicos, facilitando a manutenção da saúde das plantas para usuários de todos os níveis.
 
 ---
+## Observações
 
+Para detalhes da API, veja `/api/README.md`.
+---
 ## 👩‍💻 Autora
 
 Amanda Leite de Souza Machado
