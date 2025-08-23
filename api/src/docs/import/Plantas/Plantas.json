@@ -1,0 +1,40 @@
+{
+    "Dados": [
+        {
+            "Nome_comum": "Babosa",
+            "Nome_cientifico": "Aloe vera",
+            "Tipo": "erva",
+            "Clima": "semiárido",
+            "Regiao_origem": "África",
+            "Luminosidade": "Sol pleno",
+            "Frequencia_rega": "1x por semana",
+            "Umidade_min": 15.00,
+            "Umidade_max": 40.00,
+            "Descricao": "Planta suculenta conhecida por suas propriedades medicinais e fácil cultivo."
+        },
+        {
+            "Nome_comum": "Jade",
+            "Nome_cientifico": "Crassula ovata",
+            "Tipo": "suculenta",
+            "Clima": "temperado",
+            "Regiao_origem": "África do Sul",
+            "Luminosidade": "Meia sombra a sol pleno",
+            "Frequencia_rega": "2x por semana",
+            "Umidade_min": 20.00,
+            "Umidade_max": 50.00,
+            "Descricao": "Planta suculenta com folhas verdes brilhantes, ideal para ambientes internos."
+        },
+        {
+            "Nome_comum": "Lírio-da-paz",
+            "Nome_cientifico": "Spathiphyllum wallisii",
+            "Tipo": "erva",
+            "Clima": "tropical",
+            "Regiao_origem": "América Central",
+            "Luminosidade": "Sombra",
+            "Frequencia_rega": "3x por semana",
+            "Umidade_min": 40.00,
+            "Umidade_max": 70.00,
+            "Descricao": "Planta ornamental muito apreciada por sua flor branca elegante e facilidade de cultivo."
+        }
+    ]
+}

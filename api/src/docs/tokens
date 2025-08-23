@@ -1,0 +1,29 @@
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0IiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdCIsInN1YiI6ImFjZXNzb19zaXN0ZW1hIiwiaWF0IjoxNzUzNzk5NDgyLCJleHAiOjE3NTYzOTE0ODIsIm5iZiI6MTc1Mzc5OTQ4MiwianRpIjoiNmQ2MTUzYmFkNDg2NjAwMDQ1YTRjZjg4ZTE0ZTMyMWEiLCJwdWJsaWMiOnsiTm9tZSI6Ik1hcmNvcyBBcmFudGVzIiwiRW1haWwiOiJhcmFudGVzYXpldmVkb0BnbWFpbC5jb20iLCJSb2xlIjoidXN1YXJpbyJ9LCJwcml2YXRlIjp7IklkVXN1YXJpbyI6Nn19.If5-HSoe1GedNHqygbWC7ZKvJH0O7WqAl6fLNRb_gq4
+
+
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0IiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdCIsInN1YiI6ImFjZXNzb19zaXN0ZW1hIiwiaWF0IjoxNzUzODAxMDQxLCJleHAiOjE3NTYzOTMwNDEsIm5iZiI6MTc1MzgwMTA0MSwianRpIjoiYzY0MTg1YWE2MjIwYjNiM2MzMTkzMGYyMTA1YjYxMDgiLCJwdWJsaWMiOnsiTm9tZSI6IkFtYW5kYSBMZWl0ZSIsIkVtYWlsIjoiYW1hbmRhbGVpdGVkc21AZ21haWwuY29tIiwiUm9sZSI6ImFkbWluIn0sInByaXZhdGUiOnsiSWRVc3VhcmlvIjoxMH19.gAWfQF3IAEOIv3iVsRj7Cvk7DtYfHp2gLwrtJk4r2jA
+
+
+
+
+rota        
+$this->router->get('/analises/recomendacoes', function($id) {
+    try{
+    $jwtMiddleware = new JWTMiddleware();    
+    $claims = $jwtMiddleware->isValidToken();
+    ($jwtMiddlewaree())->verificarTokenAtivo()) {
+
+        } else {
+            $this->notValidToken();
+        }
+        $idUsuario = $claims->private->IdUsuario;
+
+        (new AnaliseRecControl())
+            ->showAnalisesRec((int)$id, $idUsuario);
+
+    }
+    catch (Throwable $exception) {
+        $this->handleError($exception, "Error fetching analysis recommendations");
+    }
+    exit();
+});

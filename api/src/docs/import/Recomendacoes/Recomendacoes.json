@@ -1,0 +1,24 @@
+{
+  "Dados": [
+    {
+      "Titulo": "Folhas com bordas secas",
+      "Descricao": "Pode ser baixa umidade do ar. Coloque a planta próxima a um umidificador ou use um prato com água ao redor."
+    },
+    {
+      "Titulo": "Solo com cheiro forte",
+      "Descricao": "Indica possível apodrecimento de raízes. Suspenda a rega e avalie a troca do substrato."
+    },
+    {
+      "Titulo": "Presença de teias finas",
+      "Descricao": "Pode ser infestação de ácaros. Limpe as folhas com água e sabão neutro ou utilize um inseticida apropriado."
+    },
+    {
+      "Titulo": "Folhas enrolando para baixo",
+      "Descricao": "Sinal de excesso de água ou má drenagem. Verifique os furos do vaso e reduza a frequência das regas."
+    },
+    {
+      "Titulo": "Talo escurecido",
+      "Descricao": "Pode indicar fungos. Corte a parte afetada e aplique um fungicida preventivo."
+    }
+  ]
+}

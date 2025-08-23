@@ -1,0 +1,27 @@
+<?xml version ="1.0" encoding="UTF-8"?>
+<Dados>
+  <Dado>
+    <Nome_comum>Hortelã</Nome_comum>
+    <Nome_cientifico>Mentha spicata</Nome_cientifico>
+    <Tipo>erva</Tipo>
+    <Clima>temperado</Clima>
+    <Regiao_origem>Europa</Regiao_origem>
+    <Luminosidade>Meia sombra</Luminosidade>
+    <Frequencia_rega>3x por semana</Frequencia_rega>
+    <Umidade_min>30.0</Umidade_min>
+    <Umidade_max>70.0</Umidade_max>
+    <Descricao>Planta aromática usada em chás e temperos, de cultivo fácil.</Descricao>
+  </Dado>
+  <Dado>
+    <Nome_comum>Costela-de-adão</Nome_comum>
+    <Nome_cientifico>Monstera deliciosa</Nome_cientifico>
+    <Tipo>trepadeira</Tipo>
+    <Clima>tropical</Clima>
+    <Regiao_origem>América Central</Regiao_origem>
+    <Luminosidade>Luz difusa</Luminosidade>
+    <Frequencia_rega>2x por semana</Frequencia_rega>
+    <Umidade_min>40.0</Umidade_min>
+    <Umidade_max>80.0</Umidade_max>
+    <Descricao>Planta ornamental de folhas grandes e recortadas, muito usada em decoração.</Descricao>
+  </Dado>
+</Dados>

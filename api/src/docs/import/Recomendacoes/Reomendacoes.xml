@@ -1,0 +1,22 @@
+<Dados>
+    <Dado>
+        <Titulo>Evite exposição prolongada ao sol</Titulo>
+        <Descricao>Algumas plantas sensíveis devem ser mantidas em ambientes com luz indireta.</Descricao>
+    </Dado>
+    <Dado>
+        <Titulo>Rotacione o vaso semanalmente</Titulo>
+        <Descricao>Girar o vaso ajuda a planta a crescer de forma simétrica e equilibrada.</Descricao>
+    </Dado>
+    <Dado>
+        <Titulo>Use regador com bico fino</Titulo>
+        <Descricao>Isso evita encharcar a terra e danificar as raízes superficiais.</Descricao>
+    </Dado>
+    <Dado>
+        <Titulo>Folhas enrolando para baixo</Titulo>
+        <Descricao>Sinal de excesso de água ou má drenagem. Verifique os furos do vaso e reduza a frequência das regas.</Descricao>
+    </Dado>
+    <Dado>
+        <Titulo>Talo escurecido</Titulo>
+        <Descricao>Pode indicar fungos. Corte a parte afetada e aplique um fungicida preventivo.</Descricao>
+    </Dado>
+</Dados>

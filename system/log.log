@@ -1,0 +1,3220 @@
+[2025-06-20 00:05:33.000] [Throwable] 
+ Throwable:
+Message: Class "Planta" not found
+Code: 0
+File: C:\xampp\htdocs\api\src\routes\Roteador.php
+Line: 91
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#1 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#2 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#3 C:\xampp\htdocs\api\src\routes\Roteador.php(260): Router->run()
+#4 C:\xampp\htdocs\api.php(3): Roteador->start()
+#5 {main} 
+ ################################################## 
+[2025-06-20 00:06:13.000] [Throwable] 
+ Throwable:
+Message: Class "Planta" not found
+Code: 0
+File: C:\xampp\htdocs\api\src\routes\Roteador.php
+Line: 91
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#1 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#2 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#3 C:\xampp\htdocs\api\src\routes\Roteador.php(260): Router->run()
+#4 C:\xampp\htdocs\api.php(3): Roteador->start()
+#5 {main} 
+ ################################################## 
+[2025-07-20 00:51:21.000] [Throwable] 
+ Throwable:
+Message: Class "AnalisePlantaControl" not found
+Code: 0
+File: C:\xampp\htdocs\api\src\routes\Roteador.php
+Line: 169
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('1')
+#1 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#2 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#3 C:\xampp\htdocs\api\src\routes\Roteador.php(270): Router->run()
+#4 C:\xampp\htdocs\api.php(3): Roteador->start()
+#5 {main} 
+ ################################################## 
+[2025-07-20 00:53:17.000] [Throwable] 
+ Throwable:
+Message: Call to undefined method AnalisePlanta::setId()
+Code: 0
+File: C:\xampp\htdocs\api\src\DAO\AnalisePlantaDAO.php
+Line: 45
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\AnalisePlantaControl.php(22): AnalisePlantaDAO->readById(1)
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(164): AnalisePlantaControl->show(1)
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('1')
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(264): Router->run()
+#6 C:\xampp\htdocs\api.php(3): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-20 00:57:07.000] [Throwable] 
+ Throwable:
+Message: Unknown named parameter $idPlantaUsuario
+Code: 0
+File: C:\xampp\htdocs\api\src\routes\Roteador.php
+Line: 174
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('1')
+#1 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#2 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#3 C:\xampp\htdocs\api\src\routes\Roteador.php(264): Router->run()
+#4 C:\xampp\htdocs\api.php(3): Roteador->start()
+#5 {main} 
+ ################################################## 
+[2025-07-20 01:36:06.000] [Throwable] 
+ Throwable:
+Message: Class "AnalisePlantaMiddleware" not found
+Code: 0
+File: C:\xampp\htdocs\api\src\routes\Roteador.php
+Line: 176
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('3')
+#1 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#2 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#3 C:\xampp\htdocs\api\src\routes\Roteador.php(279): Router->run()
+#4 C:\xampp\htdocs\api.php(3): Roteador->start()
+#5 {main} 
+ ################################################## 
+[2025-07-20 01:55:09.000] [Throwable] 
+ Throwable:
+Message: Unknown named parameter $dataAnalise
+Code: 0
+File: C:\xampp\htdocs\api\src\controller\AnalisePlantaControl.php
+Line: 46
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Roteador.php(200): AnalisePlantaControl->store(Object(stdClass))
+#1 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('3')
+#2 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(281): Router->run()
+#5 C:\xampp\htdocs\api.php(3): Roteador->start()
+#6 {main} 
+ ################################################## 
+[2025-07-20 01:55:51.000] [Throwable] 
+ Throwable:
+Message: Unknown named parameter $statusSaude
+Code: 0
+File: C:\xampp\htdocs\api\src\controller\AnalisePlantaControl.php
+Line: 46
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Roteador.php(200): AnalisePlantaControl->store(Object(stdClass))
+#1 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('3')
+#2 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(281): Router->run()
+#5 C:\xampp\htdocs\api.php(3): Roteador->start()
+#6 {main} 
+ ################################################## 
+[2025-07-20 01:56:26.000] [Throwable] 
+ Throwable:
+Message: Unknown named parameter $statusSaude
+Code: 0
+File: C:\xampp\htdocs\api\src\controller\AnalisePlantaControl.php
+Line: 46
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Roteador.php(200): AnalisePlantaControl->store(Object(stdClass))
+#1 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('3')
+#2 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(281): Router->run()
+#5 C:\xampp\htdocs\api.php(3): Roteador->start()
+#6 {main} 
+ ################################################## 
+[2025-07-20 02:06:01.000] [Throwable] 
+ Throwable:
+Message: Unknown named parameter $id_planta_usuario
+Code: 0
+File: C:\xampp\htdocs\api\src\controller\AnalisePlantaControl.php
+Line: 46
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Roteador.php(203): AnalisePlantaControl->store(Object(stdClass))
+#1 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('3')
+#2 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(284): Router->run()
+#5 C:\xampp\htdocs\api.php(3): Roteador->start()
+#6 {main} 
+ ################################################## 
+[2025-07-20 20:44:16.000] [Throwable] 
+ Throwable:
+Message: Class "CadastroMiddleware" not found
+Code: 0
+File: C:\xampp\htdocs\api\src\routes\Roteador.php
+Line: 36
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#1 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#2 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#3 C:\xampp\htdocs\api\src\routes\Roteador.php(301): Router->run()
+#4 C:\xampp\htdocs\api.php(3): Roteador->start()
+#5 {main} 
+ ################################################## 
+[2025-07-20 20:45:05.000] [Throwable] 
+ Throwable:
+Message: Call to undefined method CadastroMiddleware::IsValidSenha()
+Code: 0
+File: C:\xampp\htdocs\api\src\routes\Roteador.php
+Line: 45
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#1 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#2 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#3 C:\xampp\htdocs\api\src\routes\Roteador.php(304): Router->run()
+#4 C:\xampp\htdocs\api.php(3): Roteador->start()
+#5 {main} 
+ ################################################## 
+[2025-07-20 20:45:37.000] [Throwable] 
+ Throwable:
+Message: Unknown named parameter $senha
+Code: 0
+File: C:\xampp\htdocs\api\src\routes\Roteador.php
+Line: 45
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#1 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#2 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#3 C:\xampp\htdocs\api\src\routes\Roteador.php(304): Router->run()
+#4 C:\xampp\htdocs\api.php(3): Roteador->start()
+#5 {main} 
+ ################################################## 
+[2025-07-20 20:46:33.000] [Throwable] 
+ Throwable:
+Message: Call to undefined method CadastroUsuario::setId()
+Code: 0
+File: C:\xampp\htdocs\api\src\controller\CadastroControl.php
+Line: 83
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Roteador.php(48): CadastroControl->store(Object(stdClass))
+#1 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#2 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(304): Router->run()
+#5 C:\xampp\htdocs\api.php(3): Roteador->start()
+#6 {main} 
+ ################################################## 
+[2025-07-20 20:48:35.000] [Throwable] 
+ Throwable:
+Message: CadastroUsuario::setNome(): Argument #1 ($nome) must be of type string, null given, called in C:\xampp\htdocs\api\src\controller\CadastroControl.php on line 84
+Code: 0
+File: C:\xampp\htdocs\api\src\models\CadastroUsuario.php
+Line: 41
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\CadastroControl.php(84): CadastroUsuario->setNome(NULL)
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(48): CadastroControl->store(Object(stdClass))
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(304): Router->run()
+#6 C:\xampp\htdocs\api.php(3): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-20 20:51:32.000] [Throwable] 
+ Throwable:
+Message: CadastroUsuario::setNome(): Argument #1 ($nome) must be of type string, null given, called in C:\xampp\htdocs\api\src\controller\CadastroControl.php on line 84
+Code: 0
+File: C:\xampp\htdocs\api\src\models\CadastroUsuario.php
+Line: 41
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\CadastroControl.php(84): CadastroUsuario->setNome(NULL)
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(48): CadastroControl->store(Object(stdClass))
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(304): Router->run()
+#6 C:\xampp\htdocs\api.php(3): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-21 16:33:30.000] [Throwable] 
+ Throwable:
+Message: Unknown named parameter $Nome
+Code: 0
+File: C:\xampp\htdocs\api\src\controller\CadastroControl.php
+Line: 84
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Roteador.php(48): CadastroControl->store(Object(stdClass))
+#1 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#2 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(304): Router->run()
+#5 C:\xampp\htdocs\api.php(3): Roteador->start()
+#6 {main} 
+ ################################################## 
+[2025-07-21 16:34:35.000] [Throwable] 
+ Throwable:
+Message: Unknown named parameter $Nome
+Code: 0
+File: C:\xampp\htdocs\api\src\controller\CadastroControl.php
+Line: 83
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Roteador.php(48): CadastroControl->store(Object(stdClass))
+#1 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#2 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(304): Router->run()
+#5 C:\xampp\htdocs\api.php(3): Roteador->start()
+#6 {main} 
+ ################################################## 
+[2025-07-21 16:35:16.000] [Throwable] 
+ Throwable:
+Message: Unknown named parameter $senha_hash
+Code: 0
+File: C:\xampp\htdocs\api\src\controller\CadastroControl.php
+Line: 85
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Roteador.php(48): CadastroControl->store(Object(stdClass))
+#1 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#2 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(304): Router->run()
+#5 C:\xampp\htdocs\api.php(3): Roteador->start()
+#6 {main} 
+ ################################################## 
+[2025-07-21 16:36:02.000] [Throwable] 
+ Throwable:
+Message: Call to undefined method CadastroUsuario::setDataCriacao()
+Code: 0
+File: C:\xampp\htdocs\api\src\controller\CadastroControl.php
+Line: 86
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Roteador.php(48): CadastroControl->store(Object(stdClass))
+#1 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#2 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(304): Router->run()
+#5 C:\xampp\htdocs\api.php(3): Roteador->start()
+#6 {main} 
+ ################################################## 
+[2025-07-21 16:36:26.000] [Throwable] 
+ Throwable:
+Message: CadastroUsuario::setDataCadastro(): Argument #1 ($dataCadastro) must be of type string, null given, called in C:\xampp\htdocs\api\src\controller\CadastroControl.php on line 86
+Code: 0
+File: C:\xampp\htdocs\api\src\models\CadastroUsuario.php
+Line: 68
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\CadastroControl.php(86): CadastroUsuario->setDataCadastro(NULL)
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(48): CadastroControl->store(Object(stdClass))
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(304): Router->run()
+#6 C:\xampp\htdocs\api.php(3): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-21 16:37:48.000] [Throwable] 
+ Throwable:
+Message: CadastroUsuario::setDataAtualizacao(): Argument #1 ($dataAtualizacao) must be of type string, null given, called in C:\xampp\htdocs\api\src\controller\CadastroControl.php on line 87
+Code: 0
+File: C:\xampp\htdocs\api\src\models\CadastroUsuario.php
+Line: 77
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\CadastroControl.php(87): CadastroUsuario->setDataAtualizacao(NULL)
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(48): CadastroControl->store(Object(stdClass))
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(304): Router->run()
+#6 C:\xampp\htdocs\api.php(3): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-21 16:40:00.000] [Throwable] 
+ Throwable:
+Message: Cannot assign string to property CadastroUsuario::$dataCadastro of type DateTime
+Code: 0
+File: C:\xampp\htdocs\api\src\models\CadastroUsuario.php
+Line: 69
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\CadastroControl.php(86): CadastroUsuario->setDataCadastro('2025-07-21 16:4...')
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(48): CadastroControl->store(Object(stdClass))
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(304): Router->run()
+#6 C:\xampp\htdocs\api.php(3): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-21 16:40:41.000] [Throwable] 
+ Throwable:
+Message: CadastroUsuario::setDataCadastro(): Argument #1 ($dataCadastro) must be of type DateTime, string given, called in C:\xampp\htdocs\api\src\controller\CadastroControl.php on line 86
+Code: 0
+File: C:\xampp\htdocs\api\src\models\CadastroUsuario.php
+Line: 68
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\CadastroControl.php(86): CadastroUsuario->setDataCadastro('2025-07-21 16:4...')
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(48): CadastroControl->store(Object(stdClass))
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(304): Router->run()
+#6 C:\xampp\htdocs\api.php(3): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-21 16:42:03.000] [Throwable] 
+ Throwable:
+Message: Failed to parse time string (Y-m-d H:i:s) at position 1 (-): Unexpected character
+Code: 0
+File: C:\xampp\htdocs\api\src\controller\CadastroControl.php
+Line: 86
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\CadastroControl.php(86): DateTime->__construct('Y-m-d H:i:s')
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(48): CadastroControl->store(Object(stdClass))
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(304): Router->run()
+#6 C:\xampp\htdocs\api.php(3): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-21 16:43:57.000] [Throwable] 
+ Throwable:
+Message: CadastroUsuario::setAtivo(): Argument #1 ($ativo) must be of type bool, null given, called in C:\xampp\htdocs\api\src\controller\CadastroControl.php on line 88
+Code: 0
+File: C:\xampp\htdocs\api\src\models\CadastroUsuario.php
+Line: 86
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\CadastroControl.php(88): CadastroUsuario->setAtivo(NULL)
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(48): CadastroControl->store(Object(stdClass))
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(304): Router->run()
+#6 C:\xampp\htdocs\api.php(3): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-21 16:47:10.000] [Throwable] 
+ Throwable:
+Message: CadastroUsuario::setDataCadastro(): Argument #1 ($dataCadastro) must be of type DateTime, string given, called in C:\xampp\htdocs\api\src\DAO\CadastroDAO.php on line 72
+Code: 0
+File: C:\xampp\htdocs\api\src\models\CadastroUsuario.php
+Line: 68
+Trace:
+#0 C:\xampp\htdocs\api\src\DAO\CadastroDAO.php(72): CadastroUsuario->setDataCadastro('2025-07-21 16:4...')
+#1 C:\xampp\htdocs\api\src\controller\CadastroControl.php(93): CadastroDAO->create(Object(CadastroUsuario))
+#2 C:\xampp\htdocs\api\src\routes\Roteador.php(48): CadastroControl->store(Object(stdClass))
+#3 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#4 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#5 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#6 C:\xampp\htdocs\api\src\routes\Roteador.php(304): Router->run()
+#7 C:\xampp\htdocs\api.php(3): Roteador->start()
+#8 {main} 
+ ################################################## 
+[2025-07-21 16:57:50.000] [Throwable] 
+ Throwable:
+Message: Call to undefined method CadastroUsuario::getDataCriacao()
+Code: 0
+File: C:\xampp\htdocs\api\src\DAO\CadastroDAO.php
+Line: 98
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\CadastroControl.php(91): CadastroDAO->create(Object(CadastroUsuario))
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(48): CadastroControl->store(Object(stdClass))
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(304): Router->run()
+#6 C:\xampp\htdocs\api.php(3): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-21 16:58:04.000] [Throwable] 
+ Throwable:
+Message: Call to undefined method CadastroUsuario::getAtivo()
+Code: 0
+File: C:\xampp\htdocs\api\src\DAO\CadastroDAO.php
+Line: 100
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\CadastroControl.php(91): CadastroDAO->create(Object(CadastroUsuario))
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(48): CadastroControl->store(Object(stdClass))
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(304): Router->run()
+#6 C:\xampp\htdocs\api.php(3): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-21 16:58:23.000] [Throwable] 
+ Throwable:
+Message: Call to undefined method CadastroUsuario::setId()
+Code: 0
+File: C:\xampp\htdocs\api\src\DAO\CadastroDAO.php
+Line: 106
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\CadastroControl.php(91): CadastroDAO->create(Object(CadastroUsuario))
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(48): CadastroControl->store(Object(stdClass))
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(304): Router->run()
+#6 C:\xampp\htdocs\api.php(3): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-21 16:58:42.000] [Throwable] 
+ Throwable:
+Message: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'amanda@univap.com.br' for key 'Email'
+Code: 23000
+File: C:\xampp\htdocs\api\src\DAO\CadastroDAO.php
+Line: 94
+Trace:
+#0 C:\xampp\htdocs\api\src\DAO\CadastroDAO.php(94): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\api\src\controller\CadastroControl.php(91): CadastroDAO->create(Object(CadastroUsuario))
+#2 C:\xampp\htdocs\api\src\routes\Roteador.php(48): CadastroControl->store(Object(stdClass))
+#3 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#4 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#5 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#6 C:\xampp\htdocs\api\src\routes\Roteador.php(304): Router->run()
+#7 C:\xampp\htdocs\api.php(3): Roteador->start()
+#8 {main} 
+ ################################################## 
+[2025-07-21 17:18:21.000] [Throwable] 
+ Throwable:
+Message: Unknown named parameter $idUsuario
+Code: 0
+File: C:\xampp\htdocs\api\src\routes\Roteador.php
+Line: 88
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('6')
+#1 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#2 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#3 C:\xampp\htdocs\api\src\routes\Roteador.php(320): Router->run()
+#4 C:\xampp\htdocs\api.php(3): Roteador->start()
+#5 {main} 
+ ################################################## 
+[2025-07-21 17:19:31.000] [Throwable] 
+ Throwable:
+Message: Call to undefined method CadastroUsuario::setId()
+Code: 0
+File: C:\xampp\htdocs\api\src\DAO\CadastroDAO.php
+Line: 49
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\CadastroControl.php(22): CadastroDAO->readById(6)
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(88): CadastroControl->show(6)
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('6')
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(320): Router->run()
+#6 C:\xampp\htdocs\api.php(3): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-21 17:20:14.000] [Throwable] 
+ Throwable:
+Message: Call to undefined method CadastroUsuario::setDataCriacao()
+Code: 0
+File: C:\xampp\htdocs\api\src\DAO\CadastroDAO.php
+Line: 53
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\CadastroControl.php(22): CadastroDAO->readById(6)
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(88): CadastroControl->show(6)
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('6')
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(320): Router->run()
+#6 C:\xampp\htdocs\api.php(3): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-21 17:20:26.000] [Throwable] 
+ Throwable:
+Message: CadastroUsuario::setDataCadastro(): Argument #1 ($dataCadastro) must be of type DateTime, string given, called in C:\xampp\htdocs\api\src\DAO\CadastroDAO.php on line 53
+Code: 0
+File: C:\xampp\htdocs\api\src\models\CadastroUsuario.php
+Line: 68
+Trace:
+#0 C:\xampp\htdocs\api\src\DAO\CadastroDAO.php(53): CadastroUsuario->setDataCadastro('2025-07-21 11:5...')
+#1 C:\xampp\htdocs\api\src\controller\CadastroControl.php(22): CadastroDAO->readById(6)
+#2 C:\xampp\htdocs\api\src\routes\Roteador.php(88): CadastroControl->show(6)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('6')
+#4 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#5 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#6 C:\xampp\htdocs\api\src\routes\Roteador.php(320): Router->run()
+#7 C:\xampp\htdocs\api.php(3): Roteador->start()
+#8 {main} 
+ ################################################## 
+[2025-07-22 11:45:52.000] [Throwable] 
+ Throwable:
+Message: Unknown named parameter $stdUsuario
+Code: 0
+File: C:\xampp\htdocs\api\src\routes\Roteador.php
+Line: 120
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('3')
+#1 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#2 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#3 C:\xampp\htdocs\api\src\routes\Roteador.php(346): Router->run()
+#4 C:\xampp\htdocs\api.php(4): Roteador->start()
+#5 {main} 
+ ################################################## 
+[2025-07-22 11:46:34.000] [Throwable] 
+ Throwable:
+Message: Attempt to modify property "usuario" on null
+Code: 0
+File: C:\xampp\htdocs\api\src\routes\Roteador.php
+Line: 118
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('3')
+#1 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#2 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#3 C:\xampp\htdocs\api\src\routes\Roteador.php(346): Router->run()
+#4 C:\xampp\htdocs\api.php(4): Roteador->start()
+#5 {main} 
+ ################################################## 
+[2025-07-22 12:13:52.000] [Throwable] 
+ Throwable:
+Message: CadastroDAO::readById(): Argument #1 ($usuarioID) must be of type int, null given, called in C:\xampp\htdocs\api\src\controller\CadastroControl.php on line 45
+Code: 0
+File: C:\xampp\htdocs\api\src\DAO\CadastroDAO.php
+Line: 26
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\CadastroControl.php(45): CadastroDAO->readById(NULL)
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(131): CadastroControl->edit(Object(stdClass))
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('3')
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(357): Router->run()
+#6 C:\xampp\htdocs\api.php(4): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-22 12:14:41.000] [Throwable] 
+ Throwable:
+Message: Call to undefined method CadastroUsuario::setId()
+Code: 0
+File: C:\xampp\htdocs\api\src\controller\CadastroControl.php
+Line: 49
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Roteador.php(131): CadastroControl->edit(Object(stdClass))
+#1 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('3')
+#2 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(357): Router->run()
+#5 C:\xampp\htdocs\api.php(4): Roteador->start()
+#6 {main} 
+ ################################################## 
+[2025-07-22 12:17:02.000] [Throwable] 
+ Throwable:
+Message: Call to undefined method CadastroUsuario::setDataCriacao()
+Code: 0
+File: C:\xampp\htdocs\api\src\controller\CadastroControl.php
+Line: 53
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Roteador.php(131): CadastroControl->edit(Object(stdClass))
+#1 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('3')
+#2 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(357): Router->run()
+#5 C:\xampp\htdocs\api.php(4): Roteador->start()
+#6 {main} 
+ ################################################## 
+[2025-07-22 12:17:33.000] [Throwable] 
+ Throwable:
+Message: Call to undefined method CadastroUsuario::isAtivo()
+Code: 0
+File: C:\xampp\htdocs\api\src\controller\CadastroControl.php
+Line: 54
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Roteador.php(131): CadastroControl->edit(Object(stdClass))
+#1 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('3')
+#2 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(357): Router->run()
+#5 C:\xampp\htdocs\api.php(4): Roteador->start()
+#6 {main} 
+ ################################################## 
+[2025-07-22 12:17:50.000] [Throwable] 
+ Throwable:
+Message: CadastroUsuario::setDataAtualizacao(): Argument #1 ($dataAtualizacao) must be of type DateTime, string given, called in C:\xampp\htdocs\api\src\DAO\CadastroDAO.php on line 120
+Code: 0
+File: C:\xampp\htdocs\api\src\models\CadastroUsuario.php
+Line: 77
+Trace:
+#0 C:\xampp\htdocs\api\src\DAO\CadastroDAO.php(120): CadastroUsuario->setDataAtualizacao('2025-07-22 12:1...')
+#1 C:\xampp\htdocs\api\src\controller\CadastroControl.php(56): CadastroDAO->update(Object(CadastroUsuario))
+#2 C:\xampp\htdocs\api\src\routes\Roteador.php(131): CadastroControl->edit(Object(stdClass))
+#3 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('3')
+#4 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#5 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#6 C:\xampp\htdocs\api\src\routes\Roteador.php(357): Router->run()
+#7 C:\xampp\htdocs\api.php(4): Roteador->start()
+#8 {main} 
+ ################################################## 
+[2025-07-22 12:19:29.000] [Throwable] 
+ Throwable:
+Message: Call to undefined method CadastroUsuario::getId()
+Code: 0
+File: C:\xampp\htdocs\api\src\DAO\CadastroDAO.php
+Line: 133
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\CadastroControl.php(56): CadastroDAO->update(Object(CadastroUsuario))
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(131): CadastroControl->edit(Object(stdClass))
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('3')
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(357): Router->run()
+#6 C:\xampp\htdocs\api.php(4): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-22 12:21:58.000] [Throwable] 
+ Throwable:
+Message: Call to undefined method CadastroUsuario::isAtivo()
+Code: 0
+File: C:\xampp\htdocs\api\src\DAO\CadastroDAO.php
+Line: 137
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\CadastroControl.php(56): CadastroDAO->update(Object(CadastroUsuario))
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(131): CadastroControl->edit(Object(stdClass))
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('3')
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(357): Router->run()
+#6 C:\xampp\htdocs\api.php(4): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-22 12:22:26.000] [Throwable] 
+ Throwable:
+Message: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+Code: HY093
+File: C:\xampp\htdocs\api\src\DAO\CadastroDAO.php
+Line: 132
+Trace:
+#0 C:\xampp\htdocs\api\src\DAO\CadastroDAO.php(132): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\api\src\controller\CadastroControl.php(56): CadastroDAO->update(Object(CadastroUsuario))
+#2 C:\xampp\htdocs\api\src\routes\Roteador.php(131): CadastroControl->edit(Object(stdClass))
+#3 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('3')
+#4 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#5 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#6 C:\xampp\htdocs\api\src\routes\Roteador.php(357): Router->run()
+#7 C:\xampp\htdocs\api.php(4): Roteador->start()
+#8 {main} 
+ ################################################## 
+[2025-07-22 13:01:22.000] [Throwable] 
+ Throwable:
+Message: Unknown named parameter $idUsuario
+Code: 0
+File: C:\xampp\htdocs\api\src\routes\Roteador.php
+Line: 144
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('3')
+#1 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#2 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#3 C:\xampp\htdocs\api\src\routes\Roteador.php(363): Router->run()
+#4 C:\xampp\htdocs\api.php(4): Roteador->start()
+#5 {main} 
+ ################################################## 
+[2025-07-22 13:02:27.000] [Throwable] 
+ Throwable:
+Message: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`smartgrow_db`.`usuarioxplanta`, CONSTRAINT `usuarioxplanta_ibfk_1` FOREIGN KEY (`ID_usuario`) REFERENCES `cadastro_usuario` (`ID_usuario`))
+Code: 23000
+File: C:\xampp\htdocs\api\src\DAO\CadastroDAO.php
+Line: 115
+Trace:
+#0 C:\xampp\htdocs\api\src\DAO\CadastroDAO.php(115): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\api\src\controller\CadastroControl.php(104): CadastroDAO->delete(3)
+#2 C:\xampp\htdocs\api\src\routes\Roteador.php(144): CadastroControl->delete(3)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('3')
+#4 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#5 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#6 C:\xampp\htdocs\api\src\routes\Roteador.php(363): Router->run()
+#7 C:\xampp\htdocs\api.php(4): Roteador->start()
+#8 {main} 
+ ################################################## 
+[2025-07-22 14:25:14.000] [Throwable] 
+ Throwable:
+Message: SQLSTATE[HY000] [1049] Unknown database 'smartgrow_db'
+Code: 1049
+File: C:\xampp\htdocs\api\src\db\Database.php
+Line: 43
+Trace:
+#0 C:\xampp\htdocs\api\src\db\Database.php(43): PDO->__construct('mysql:host=127....', 'root', Object(SensitiveParameterValue), Array)
+#1 C:\xampp\htdocs\api\src\db\Database.php(25): Database::connect()
+#2 C:\xampp\htdocs\api\src\DAO\PlantaDAO.php(23): Database::getConnection()
+#3 C:\xampp\htdocs\api\src\controller\PlantaControl.php(8): PlantaDAO->readAll()
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(163): PlantaControl->index()
+#5 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#6 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#7 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#8 C:\xampp\htdocs\api\src\routes\Roteador.php(371): Router->run()
+#9 C:\xampp\htdocs\api.php(4): Roteador->start()
+#10 {main} 
+ ################################################## 
+[2025-07-22 14:27:35.000] [Throwable] 
+ Throwable:
+Message: Class "PlantasMiddleware" not found
+Code: 0
+File: C:\xampp\htdocs\api\src\routes\Roteador.php
+Line: 172
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('2')
+#1 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#2 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#3 C:\xampp\htdocs\api\src\routes\Roteador.php(374): Router->run()
+#4 C:\xampp\htdocs\api.php(4): Roteador->start()
+#5 {main} 
+ ################################################## 
+[2025-07-22 14:28:27.000] [Throwable] 
+ Throwable:
+Message: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ID_usuario' in 'field list'
+Code: 42S22
+File: C:\xampp\htdocs\api\src\DAO\PlantaDAO.php
+Line: 48
+Trace:
+#0 C:\xampp\htdocs\api\src\DAO\PlantaDAO.php(48): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\api\src\controller\PlantaControl.php(22): PlantaDAO->readById(2)
+#2 C:\xampp\htdocs\api\src\routes\Roteador.php(173): PlantaControl->show(2)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('2')
+#4 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#5 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#6 C:\xampp\htdocs\api\src\routes\Roteador.php(374): Router->run()
+#7 C:\xampp\htdocs\api.php(4): Roteador->start()
+#8 {main} 
+ ################################################## 
+[2025-07-22 14:29:59.000] [Throwable] 
+ Throwable:
+Message: Unknown named parameter $usuarioID
+Code: 0
+File: C:\xampp\htdocs\api\src\controller\PlantaControl.php
+Line: 22
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Roteador.php(173): PlantaControl->show(2)
+#1 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('2')
+#2 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(374): Router->run()
+#5 C:\xampp\htdocs\api.php(4): Roteador->start()
+#6 {main} 
+ ################################################## 
+[2025-07-22 14:30:51.000] [Throwable] 
+ Throwable:
+Message: Call to undefined method Plantas::setId()
+Code: 0
+File: C:\xampp\htdocs\api\src\DAO\PlantaDAO.php
+Line: 57
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\PlantaControl.php(22): PlantaDAO->readById(2)
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(173): PlantaControl->show(2)
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('2')
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(374): Router->run()
+#6 C:\xampp\htdocs\api.php(4): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-22 18:33:14.000] [Throwable] 
+ Throwable:
+Message: Unknown named parameter $nomePlanta
+Code: 0
+File: C:\xampp\htdocs\api\src\middlewares\PlantaMiddleware.php
+Line: 146
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Roteador.php(195): PlantaMiddleware->hasNotPlantaByName('Zamioculca')
+#1 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#2 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(393): Router->run()
+#5 C:\xampp\htdocs\api.php(4): Roteador->start()
+#6 {main} 
+ ################################################## 
+[2025-07-22 18:45:16.000] [Throwable] 
+ Throwable:
+Message: Unknown named parameter $nomeComum
+Code: 0
+File: C:\xampp\htdocs\api\src\controller\PlantaControl.php
+Line: 88
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Roteador.php(199): PlantaControl->store(Object(stdClass))
+#1 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#2 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(393): Router->run()
+#5 C:\xampp\htdocs\api.php(4): Roteador->start()
+#6 {main} 
+ ################################################## 
+[2025-07-22 19:20:44.000] [Throwable] 
+ Throwable:
+Message: Plantas::setNomeComum(): Argument #1 ($nomeComum) must be of type string, null given, called in C:\xampp\htdocs\api\src\controller\PlantaControl.php on line 88
+Code: 0
+File: C:\xampp\htdocs\api\src\models\Plantas.php
+Line: 48
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\PlantaControl.php(88): Plantas->setNomeComum(NULL)
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(199): PlantaControl->store(Object(stdClass))
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(393): Router->run()
+#6 C:\xampp\htdocs\api.php(4): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-22 19:23:20.000] [Throwable] 
+ Throwable:
+Message: Plantas::setNomeComum(): Argument #1 ($nomeComum) must be of type string, null given, called in C:\xampp\htdocs\api\src\controller\PlantaControl.php on line 88
+Code: 0
+File: C:\xampp\htdocs\api\src\models\Plantas.php
+Line: 48
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\PlantaControl.php(88): Plantas->setNomeComum(NULL)
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(199): PlantaControl->store(Object(stdClass))
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(393): Router->run()
+#6 C:\xampp\htdocs\api.php(4): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-22 19:23:43.000] [Throwable] 
+ Throwable:
+Message: Plantas::setNomeComum(): Argument #1 ($nomeComum) must be of type string, null given, called in C:\xampp\htdocs\api\src\controller\PlantaControl.php on line 88
+Code: 0
+File: C:\xampp\htdocs\api\src\models\Plantas.php
+Line: 48
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\PlantaControl.php(88): Plantas->setNomeComum(NULL)
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(199): PlantaControl->store(Object(stdClass))
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(393): Router->run()
+#6 C:\xampp\htdocs\api.php(4): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-22 19:23:45.000] [Throwable] 
+ Throwable:
+Message: Plantas::setNomeComum(): Argument #1 ($nomeComum) must be of type string, null given, called in C:\xampp\htdocs\api\src\controller\PlantaControl.php on line 88
+Code: 0
+File: C:\xampp\htdocs\api\src\models\Plantas.php
+Line: 48
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\PlantaControl.php(88): Plantas->setNomeComum(NULL)
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(199): PlantaControl->store(Object(stdClass))
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(393): Router->run()
+#6 C:\xampp\htdocs\api.php(4): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-22 19:27:02.000] [Throwable] 
+ Throwable:
+Message: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`smartgrow_db`.`analise_planta`, CONSTRAINT `analise_planta_ibfk_1` FOREIGN KEY (`ID_planta_usuario`) REFERENCES `planta_usuario` (`ID`))
+Code: 23000
+File: C:\xampp\htdocs\api\src\DAO\AnalisePlantaDAO.php
+Line: 78
+Trace:
+#0 C:\xampp\htdocs\api\src\DAO\AnalisePlantaDAO.php(78): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\api\src\controller\AnalisePlantaControl.php(50): AnalisePlantaDAO->create(Object(AnalisePlanta))
+#2 C:\xampp\htdocs\api\src\routes\Roteador.php(307): AnalisePlantaControl->store(Object(stdClass))
+#3 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('5')
+#4 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#5 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#6 C:\xampp\htdocs\api\src\routes\Roteador.php(393): Router->run()
+#7 C:\xampp\htdocs\api.php(4): Roteador->start()
+#8 {main} 
+ ################################################## 
+[2025-07-22 19:42:40.000] [Throwable] 
+ Throwable:
+Message: PlantaDAO::readById(): Argument #1 ($plantaID) must be of type int, null given, called in C:\xampp\htdocs\api\src\controller\PlantaControl.php on line 45
+Code: 0
+File: C:\xampp\htdocs\api\src\DAO\PlantaDAO.php
+Line: 30
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\PlantaControl.php(45): PlantaDAO->readById(NULL)
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(253): PlantaControl->edit(Object(stdClass))
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('1')
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(440): Router->run()
+#6 C:\xampp\htdocs\api.php(4): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-22 19:47:40.000] [Throwable] 
+ Throwable:
+Message: PlantaDAO::readById(): Argument #1 ($plantaID) must be of type int, null given, called in C:\xampp\htdocs\api\src\controller\PlantaControl.php on line 45
+Code: 0
+File: C:\xampp\htdocs\api\src\DAO\PlantaDAO.php
+Line: 30
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\PlantaControl.php(45): PlantaDAO->readById(NULL)
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(253): PlantaControl->edit(Object(stdClass))
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('1')
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(440): Router->run()
+#6 C:\xampp\htdocs\api.php(4): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-22 19:47:45.000] [Throwable] 
+ Throwable:
+Message: PlantaDAO::readById(): Argument #1 ($plantaID) must be of type int, null given, called in C:\xampp\htdocs\api\src\controller\PlantaControl.php on line 45
+Code: 0
+File: C:\xampp\htdocs\api\src\DAO\PlantaDAO.php
+Line: 30
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\PlantaControl.php(45): PlantaDAO->readById(NULL)
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(253): PlantaControl->edit(Object(stdClass))
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('1')
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(440): Router->run()
+#6 C:\xampp\htdocs\api.php(4): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-22 19:54:29.000] [Throwable] 
+ Throwable:
+Message: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`smartgrow_db`.`usuarioxplanta`, CONSTRAINT `usuarioxplanta_ibfk_2` FOREIGN KEY (`ID_planta`) REFERENCES `plantas` (`ID_planta`))
+Code: 23000
+File: C:\xampp\htdocs\api\src\DAO\PlantaDAO.php
+Line: 138
+Trace:
+#0 C:\xampp\htdocs\api\src\DAO\PlantaDAO.php(138): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\api\src\controller\PlantaControl.php(115): PlantaDAO->delete(3)
+#2 C:\xampp\htdocs\api\src\routes\Roteador.php(266): PlantaControl->delete(3)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('3')
+#4 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#5 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#6 C:\xampp\htdocs\api\src\routes\Roteador.php(446): Router->run()
+#7 C:\xampp\htdocs\api.php(4): Roteador->start()
+#8 {main} 
+ ################################################## 
+[2025-07-23 12:43:21.000] [Throwable] 
+ Throwable:
+Message: PlantaControl::importCSV(): Argument #1 ($csvFile) must be of type array, null given, called in C:\xampp\htdocs\api\src\routes\Roteador.php on line 209
+Code: 0
+File: C:\xampp\htdocs\api\src\controller\PlantaControl.php
+Line: 137
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Roteador.php(209): PlantaControl->importCSV(NULL)
+#1 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#2 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(457): Router->run()
+#5 C:\xampp\htdocs\api.php(4): Roteador->start()
+#6 {main} 
+ ################################################## 
+[2025-07-23 12:44:47.000] [Throwable] 
+ Throwable:
+Message: PlantaControl::importCSV(): Argument #1 ($csvFile) must be of type array, null given, called in C:\xampp\htdocs\api\src\routes\Roteador.php on line 209
+Code: 0
+File: C:\xampp\htdocs\api\src\controller\PlantaControl.php
+Line: 137
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Roteador.php(209): PlantaControl->importCSV(NULL)
+#1 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#2 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(457): Router->run()
+#5 C:\xampp\htdocs\api.php(4): Roteador->start()
+#6 {main} 
+ ################################################## 
+[2025-07-23 12:50:08.000] [Throwable] 
+ Throwable:
+Message: SQLSTATE[HY000] [1049] Unknown database 'smartgrow_db'
+Code: 1049
+File: C:\xampp\htdocs\api\src\db\Database.php
+Line: 43
+Trace:
+#0 C:\xampp\htdocs\api\src\db\Database.php(43): PDO->__construct('mysql:host=127....', 'root', Object(SensitiveParameterValue), Array)
+#1 C:\xampp\htdocs\api\src\db\Database.php(25): Database::connect()
+#2 C:\xampp\htdocs\api\src\DAO\PlantaDAO.php(112): Database::getConnection()
+#3 C:\xampp\htdocs\api\src\controller\PlantaControl.php(183): PlantaDAO->create(Object(Plantas))
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(209): PlantaControl->importCSV(Array)
+#5 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#6 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#7 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#8 C:\xampp\htdocs\api\src\routes\Roteador.php(457): Router->run()
+#9 C:\xampp\htdocs\api.php(4): Roteador->start()
+#10 {main} 
+ ################################################## 
+[2025-07-23 13:01:01.000] [Throwable] 
+ Throwable:
+Message: PlantaControl::importCSV(): Argument #1 ($csvFile) must be of type array, null given, called in C:\xampp\htdocs\api\src\routes\Roteador.php on line 209
+Code: 0
+File: C:\xampp\htdocs\api\src\controller\PlantaControl.php
+Line: 137
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Roteador.php(209): PlantaControl->importCSV(NULL)
+#1 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#2 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(467): Router->run()
+#5 C:\xampp\htdocs\api.php(4): Roteador->start()
+#6 {main} 
+ ################################################## 
+[2025-07-23 13:06:49.000] [Throwable] 
+ Throwable:
+Message: Class "Planta" not found
+Code: 0
+File: C:\xampp\htdocs\api\src\controller\PlantaControl.php
+Line: 232
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Roteador.php(219): PlantaControl->importJson(Array)
+#1 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#2 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(467): Router->run()
+#5 C:\xampp\htdocs\api.php(4): Roteador->start()
+#6 {main} 
+ ################################################## 
+[2025-07-23 14:08:33.000] [Throwable] 
+ Throwable:
+Message: Call to a member function getIdPlanta() on array
+Code: 0
+File: C:\xampp\htdocs\api\src\controller\PlantaControl.php
+Line: 330
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Roteador.php(239): PlantaControl->exportCSV()
+#1 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#2 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(507): Router->run()
+#5 C:\xampp\htdocs\api.php(4): Roteador->start()
+#6 {main} 
+ ################################################## 
+[2025-07-23 14:11:16.000] [Throwable] 
+ Throwable:
+Message: Call to a member function getID() on array
+Code: 0
+File: C:\xampp\htdocs\api\src\controller\PlantaControl.php
+Line: 330
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Roteador.php(239): PlantaControl->exportCSV()
+#1 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#2 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(507): Router->run()
+#5 C:\xampp\htdocs\api.php(4): Roteador->start()
+#6 {main} 
+ ################################################## 
+[2025-07-23 14:19:59.000] [Throwable] 
+ Throwable:
+Message: Call to a member function getIdPlanta() on array
+Code: 0
+File: C:\xampp\htdocs\api\src\controller\PlantaControl.php
+Line: 372
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Roteador.php(259): PlantaControl->exportXML()
+#1 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#2 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(507): Router->run()
+#5 C:\xampp\htdocs\api.php(4): Roteador->start()
+#6 {main} 
+ ################################################## 
+[2025-07-23 14:20:11.000] [Throwable] 
+ Throwable:
+Message: Call to a member function getID() on array
+Code: 0
+File: C:\xampp\htdocs\api\src\controller\PlantaControl.php
+Line: 372
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Roteador.php(259): PlantaControl->exportXML()
+#1 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#2 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(507): Router->run()
+#5 C:\xampp\htdocs\api.php(4): Roteador->start()
+#6 {main} 
+ ################################################## 
+[2025-07-24 17:38:08.000] [Throwable] 
+ Throwable:
+Message: Unknown named parameter $senhaHash
+Code: 0
+File: C:\xampp\htdocs\api\src\controller\CadastroControl.php
+Line: 88
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Roteador.php(57): CadastroControl->store(Object(stdClass))
+#1 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#2 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(518): Router->run()
+#5 C:\xampp\htdocs\api.php(4): Roteador->start()
+#6 {main} 
+ ################################################## 
+[2025-07-24 18:17:39.000] [Throwable] 
+ Throwable:
+Message: Class "LoginControl" not found
+Code: 0
+File: C:\xampp\htdocs\api\src\routes\Roteador.php
+Line: 77
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#1 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#2 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#3 C:\xampp\htdocs\api\src\routes\Roteador.php(519): Router->run()
+#4 C:\xampp\htdocs\api.php(4): Roteador->start()
+#5 {main} 
+ ################################################## 
+[2025-07-24 18:18:34.000] [Throwable] 
+ Throwable:
+Message: CadastroUsuario::setEmail(): Argument #1 ($email) must be of type string, null given, called in C:\xampp\htdocs\api\src\controller\LoginControl.php on line 10
+Code: 0
+File: C:\xampp\htdocs\api\src\models\CadastroUsuario.php
+Line: 52
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\LoginControl.php(10): CadastroUsuario->setEmail(NULL)
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(80): LoginControl->autenticar(Object(stdClass))
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(521): Router->run()
+#6 C:\xampp\htdocs\api.php(4): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-24 18:19:41.000] [Throwable] 
+ Throwable:
+Message: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'amandaleitedsm@gmail.com' for key 'Email'
+Code: 23000
+File: C:\xampp\htdocs\api\src\DAO\CadastroDAO.php
+Line: 99
+Trace:
+#0 C:\xampp\htdocs\api\src\DAO\CadastroDAO.php(99): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\api\src\controller\CadastroControl.php(99): CadastroDAO->create(Object(CadastroUsuario))
+#2 C:\xampp\htdocs\api\src\routes\Roteador.php(60): CadastroControl->store(Object(stdClass))
+#3 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#4 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#5 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#6 C:\xampp\htdocs\api\src\routes\Roteador.php(521): Router->run()
+#7 C:\xampp\htdocs\api.php(4): Roteador->start()
+#8 {main} 
+ ################################################## 
+[2025-07-24 18:28:08.000] [Throwable] 
+ Throwable:
+Message: LoginDAO::verificarLogin(): Return value must be of type array, null returned
+Code: 0
+File: C:\xampp\htdocs\api\src\DAO\LoginDAO.php
+Line: 30
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\LoginControl.php(13): LoginDAO->verificarLogin(Object(CadastroUsuario))
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(80): LoginControl->autenticar(Object(stdClass))
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(521): Router->run()
+#6 C:\xampp\htdocs\api.php(4): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-24 18:29:39.000] [Throwable] 
+ Throwable:
+Message: LoginDAO::verificarLogin(): Return value must be of type array, null returned
+Code: 0
+File: C:\xampp\htdocs\api\src\DAO\LoginDAO.php
+Line: 30
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\LoginControl.php(13): LoginDAO->verificarLogin(Object(CadastroUsuario))
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(80): LoginControl->autenticar(Object(stdClass))
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(521): Router->run()
+#6 C:\xampp\htdocs\api.php(4): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-24 18:30:27.000] [Throwable] 
+ Throwable:
+Message: LoginDAO::verificarLogin(): Return value must be of type array, null returned
+Code: 0
+File: C:\xampp\htdocs\api\src\DAO\LoginDAO.php
+Line: 30
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\LoginControl.php(13): LoginDAO->verificarLogin(Object(CadastroUsuario))
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(80): LoginControl->autenticar(Object(stdClass))
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(521): Router->run()
+#6 C:\xampp\htdocs\api.php(4): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-24 18:34:52.000] [Throwable] 
+ Throwable:
+Message: CadastroUsuario::getSenha(): Return value must be of type string, null returned
+Code: 0
+File: C:\xampp\htdocs\api\src\models\CadastroUsuario.php
+Line: 58
+Trace:
+#0 C:\xampp\htdocs\api\src\DAO\LoginDAO.php(29): CadastroUsuario->getSenha()
+#1 C:\xampp\htdocs\api\src\controller\LoginControl.php(13): LoginDAO->verificarLogin(Object(CadastroUsuario))
+#2 C:\xampp\htdocs\api\src\routes\Roteador.php(80): LoginControl->autenticar(Object(stdClass))
+#3 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#4 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#5 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#6 C:\xampp\htdocs\api\src\routes\Roteador.php(521): Router->run()
+#7 C:\xampp\htdocs\api.php(4): Roteador->start()
+#8 {main} 
+ ################################################## 
+[2025-07-24 18:38:43.000] [Throwable] 
+ Throwable:
+Message: LoginDAO::verificarLogin(): Return value must be of type array, null returned
+Code: 0
+File: C:\xampp\htdocs\api\src\DAO\LoginDAO.php
+Line: 30
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\LoginControl.php(13): LoginDAO->verificarLogin(Object(CadastroUsuario))
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(80): LoginControl->autenticar(Object(stdClass))
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(521): Router->run()
+#6 C:\xampp\htdocs\api.php(4): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-24 18:58:00.000] [Throwable] 
+ Throwable:
+Message: Object of class CadastroUsuario could not be converted to string
+Code: 0
+File: C:\xampp\htdocs\api\src\controller\LoginControl.php
+Line: 13
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Roteador.php(80): LoginControl->autenticar(Object(stdClass))
+#1 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#2 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(521): Router->run()
+#5 C:\xampp\htdocs\api.php(4): Roteador->start()
+#6 {main} 
+ ################################################## 
+[2025-07-24 19:05:31.000] [Throwable] 
+ Throwable:
+Message: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'smartgrow_db.cadastro_usuario' doesn't exist
+Code: 42S02
+File: C:\xampp\htdocs\api\src\DAO\CadastroDAO.php
+Line: 99
+Trace:
+#0 C:\xampp\htdocs\api\src\DAO\CadastroDAO.php(99): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\api\src\controller\CadastroControl.php(99): CadastroDAO->create(Object(CadastroUsuario))
+#2 C:\xampp\htdocs\api\src\routes\Roteador.php(60): CadastroControl->store(Object(stdClass))
+#3 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#4 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#5 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#6 C:\xampp\htdocs\api\src\routes\Roteador.php(521): Router->run()
+#7 C:\xampp\htdocs\api.php(4): Roteador->start()
+#8 {main} 
+ ################################################## 
+[2025-07-24 19:16:28.000] [Throwable] 
+ Throwable:
+Message: Unknown named parameter $id
+Code: 0
+File: C:\xampp\htdocs\api\src\DAO\LoginDAO.php
+Line: 38
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\LoginControl.php(14): LoginDAO->verificarLogin(Object(CadastroUsuario))
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(80): LoginControl->autenticar(Object(stdClass))
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(521): Router->run()
+#6 C:\xampp\htdocs\api.php(4): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-24 19:17:27.000] [Throwable] 
+ Throwable:
+Message: Unknown named parameter $RoleUsuario
+Code: 0
+File: C:\xampp\htdocs\api\src\DAO\LoginDAO.php
+Line: 44
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\LoginControl.php(14): LoginDAO->verificarLogin(Object(CadastroUsuario))
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(80): LoginControl->autenticar(Object(stdClass))
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(521): Router->run()
+#6 C:\xampp\htdocs\api.php(4): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-24 19:17:58.000] [Throwable] 
+ Throwable:
+Message: Class "JWT" not found
+Code: 0
+File: C:\xampp\htdocs\api\src\models\MeuTokenJWT.php
+Line: 34
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\LoginControl.php(32): MeuTokenJWT->gerarToken(Object(stdClass))
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(80): LoginControl->autenticar(Object(stdClass))
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(521): Router->run()
+#6 C:\xampp\htdocs\api.php(4): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-24 19:19:14.000] [Throwable] 
+ Throwable:
+Message: Class "JWT" not found
+Code: 0
+File: C:\xampp\htdocs\api\src\models\MeuTokenJWT.php
+Line: 34
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\LoginControl.php(32): MeuTokenJWT->gerarToken(Object(stdClass))
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(80): LoginControl->autenticar(Object(stdClass))
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(521): Router->run()
+#6 C:\xampp\htdocs\api.php(4): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-24 19:20:06.000] [Throwable] 
+ Throwable:
+Message: Class "JWT" not found
+Code: 0
+File: C:\xampp\htdocs\api\src\models\MeuTokenJWT.php
+Line: 34
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\LoginControl.php(32): MeuTokenJWT->gerarToken(Object(stdClass))
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(80): LoginControl->autenticar(Object(stdClass))
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(521): Router->run()
+#6 C:\xampp\htdocs\api.php(4): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-24 19:21:38.000] [Throwable] 
+ Throwable:
+Message: Class "JWT" not found
+Code: 0
+File: C:\xampp\htdocs\api\src\models\MeuTokenJWT.php
+Line: 34
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\LoginControl.php(32): MeuTokenJWT->gerarToken(Object(stdClass))
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(80): LoginControl->autenticar(Object(stdClass))
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(521): Router->run()
+#6 C:\xampp\htdocs\api.php(4): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-24 19:52:56.000] [Throwable] 
+ Throwable:
+Message: Class "JWT" not found
+Code: 0
+File: C:\xampp\htdocs\api\src\models\MeuTokenJWT.php
+Line: 34
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\LoginControl.php(32): MeuTokenJWT->gerarToken(Object(stdClass))
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(80): LoginControl->autenticar(Object(stdClass))
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(521): Router->run()
+#6 C:\xampp\htdocs\api.php(4): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-25 16:16:32.000] [Throwable] 
+ Throwable:
+Message: Call to a member function getNome() on null
+Code: 0
+File: C:\xampp\htdocs\api\src\controller\CadastroControl.php
+Line: 50
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Roteador.php(168): CadastroControl->edit(Object(stdClass))
+#1 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('1')
+#2 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(670): Router->run()
+#5 C:\xampp\htdocs\api.php(4): Roteador->start()
+#6 {main} 
+ ################################################## 
+[2025-07-25 18:23:20.000] [Throwable] 
+ Throwable:
+Message: Unknown named parameter $apelido
+Code: 0
+File: C:\xampp\htdocs\api\src\routes\Roteador.php
+Line: 592
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#1 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#2 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#3 C:\xampp\htdocs\api\src\routes\Roteador.php(748): Router->run()
+#4 C:\xampp\htdocs\api.php(4): Roteador->start()
+#5 {main} 
+ ################################################## 
+[2025-07-25 18:23:46.000] [Throwable] 
+ Throwable:
+Message: Unknown named parameter $apelido
+Code: 0
+File: C:\xampp\htdocs\api\src\routes\Roteador.php
+Line: 592
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#1 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#2 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#3 C:\xampp\htdocs\api\src\routes\Roteador.php(748): Router->run()
+#4 C:\xampp\htdocs\api.php(4): Roteador->start()
+#5 {main} 
+ ################################################## 
+[2025-07-25 18:24:46.000] [Throwable] 
+ Throwable:
+Message: Call to undefined method PlantaDAO::readByApelido()
+Code: 0
+File: C:\xampp\htdocs\api\src\middlewares\PlantaUsuarioMiddleware.php
+Line: 61
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Roteador.php(592): PlantaUsuarioMiddleware->hasNotPlantaByApelido('Flor rosa')
+#1 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#2 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(748): Router->run()
+#5 C:\xampp\htdocs\api.php(4): Roteador->start()
+#6 {main} 
+ ################################################## 
+[2025-07-25 18:25:42.000] [Throwable] 
+ Throwable:
+Message: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'nome_cientifico' cannot be null
+Code: 23000
+File: C:\xampp\htdocs\api\src\DAO\PlantaDAO.php
+Line: 113
+Trace:
+#0 C:\xampp\htdocs\api\src\DAO\PlantaDAO.php(113): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\api\src\controller\PlantaControl.php(114): PlantaDAO->create(Object(Plantas))
+#2 C:\xampp\htdocs\api\src\routes\Roteador.php(595): PlantaControl->store(Object(stdClass))
+#3 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#4 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#5 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#6 C:\xampp\htdocs\api\src\routes\Roteador.php(748): Router->run()
+#7 C:\xampp\htdocs\api.php(4): Roteador->start()
+#8 {main} 
+ ################################################## 
+[2025-07-25 18:27:12.000] [Throwable] 
+ Throwable:
+Message: Call to a member function setId() on null
+Code: 0
+File: C:\xampp\htdocs\api\src\DAO\PlantaUsuarioDAO.php
+Line: 126
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\PlantaUsuarioControl.php(135): PlantaUsuarioDAO->create(Object(PlantaUsuario))
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(595): PlantaUsuarioControl->store(Object(stdClass))
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(748): Router->run()
+#6 C:\xampp\htdocs\api.php(4): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-25 22:38:12.000] [Throwable] 
+ Throwable:
+Message: Unknown named parameter $id
+Code: 0
+File: C:\xampp\htdocs\api\src\controller\PlantaUsuarioControl.php
+Line: 161
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Roteador.php(638): PlantaUsuarioControl->delete(3, 4)
+#1 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('3')
+#2 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(777): Router->run()
+#5 C:\xampp\htdocs\api.php(4): Roteador->start()
+#6 {main} 
+ ################################################## 
+[2025-07-25 22:38:34.000] [Throwable] 
+ Throwable:
+Message: Unknown named parameter $id
+Code: 0
+File: C:\xampp\htdocs\api\src\controller\PlantaUsuarioControl.php
+Line: 161
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Roteador.php(638): PlantaUsuarioControl->delete(3, 4)
+#1 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('3')
+#2 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(777): Router->run()
+#5 C:\xampp\htdocs\api.php(4): Roteador->start()
+#6 {main} 
+ ################################################## 
+[2025-07-25 22:47:32.000] [Throwable] 
+ Throwable:
+Message: Unknown named parameter $idPlantaUsuario
+Code: 0
+File: C:\xampp\htdocs\api\src\routes\Roteador.php
+Line: 564
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('3')
+#1 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#2 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#3 C:\xampp\htdocs\api\src\routes\Roteador.php(773): Router->run()
+#4 C:\xampp\htdocs\api.php(4): Roteador->start()
+#5 {main} 
+ ################################################## 
+[2025-07-25 22:47:54.000] [Throwable] 
+ Throwable:
+Message: Unknown named parameter $id
+Code: 0
+File: C:\xampp\htdocs\api\src\routes\Roteador.php
+Line: 564
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('3')
+#1 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#2 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#3 C:\xampp\htdocs\api\src\routes\Roteador.php(773): Router->run()
+#4 C:\xampp\htdocs\api.php(4): Roteador->start()
+#5 {main} 
+ ################################################## 
+[2025-07-25 22:48:37.000] [Throwable] 
+ Throwable:
+Message: Unknown named parameter $id
+Code: 0
+File: C:\xampp\htdocs\api\src\controller\PlantaUsuarioControl.php
+Line: 23
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Roteador.php(564): PlantaUsuarioControl->show(3, 3)
+#1 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('3')
+#2 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(773): Router->run()
+#5 C:\xampp\htdocs\api.php(4): Roteador->start()
+#6 {main} 
+ ################################################## 
+[2025-07-25 22:48:39.000] [Throwable] 
+ Throwable:
+Message: Unknown named parameter $id
+Code: 0
+File: C:\xampp\htdocs\api\src\controller\PlantaUsuarioControl.php
+Line: 23
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Roteador.php(564): PlantaUsuarioControl->show(3, 3)
+#1 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('3')
+#2 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(773): Router->run()
+#5 C:\xampp\htdocs\api.php(4): Roteador->start()
+#6 {main} 
+ ################################################## 
+[2025-07-25 22:49:03.000] [Throwable] 
+ Throwable:
+Message: Unknown named parameter $id
+Code: 0
+File: C:\xampp\htdocs\api\src\controller\PlantaUsuarioControl.php
+Line: 23
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Roteador.php(564): PlantaUsuarioControl->show(3, 3)
+#1 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('3')
+#2 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(773): Router->run()
+#5 C:\xampp\htdocs\api.php(4): Roteador->start()
+#6 {main} 
+ ################################################## 
+[2025-07-25 22:49:54.000] [Throwable] 
+ Throwable:
+Message: Cannot access private property PlantaUsuario::$IdUsuario
+Code: 0
+File: C:\xampp\htdocs\api\src\controller\PlantaUsuarioControl.php
+Line: 31
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Roteador.php(564): PlantaUsuarioControl->show(4, 3)
+#1 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('4')
+#2 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(773): Router->run()
+#5 C:\xampp\htdocs\api.php(4): Roteador->start()
+#6 {main} 
+ ################################################## 
+[2025-07-25 23:01:24.000] [Throwable] 
+ Throwable:
+Message: Call to a member function getIdUsuario() on array
+Code: 0
+File: C:\xampp\htdocs\api\src\controller\PlantaUsuarioControl.php
+Line: 89
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Roteador.php(603): PlantaUsuarioControl->showByPlant(4, 3)
+#1 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('4')
+#2 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(811): Router->run()
+#5 C:\xampp\htdocs\api.php(4): Roteador->start()
+#6 {main} 
+ ################################################## 
+[2025-07-25 23:03:52.000] [Throwable] 
+ Throwable:
+Message: PlantaUsuarioDAO::readByIdPlanta(): Return value must be of type array, null returned
+Code: 0
+File: C:\xampp\htdocs\api\src\DAO\PlantaUsuarioDAO.php
+Line: 85
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\PlantaUsuarioControl.php(81): PlantaUsuarioDAO->readByIdPlanta(4)
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(603): PlantaUsuarioControl->showByPlant(4, 3)
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('4')
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(811): Router->run()
+#6 C:\xampp\htdocs\api.php(4): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-26 13:16:42.000] [Throwable] 
+ Throwable:
+Message: Call to undefined method AnalisePlanta::getIDUsuario()
+Code: 0
+File: C:\xampp\htdocs\api\src\controller\AnalisePlantaControl.php
+Line: 30
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Roteador.php(721): AnalisePlantaControl->show(11, 3)
+#1 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('11')
+#2 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(841): Router->run()
+#5 C:\xampp\htdocs\api.php(4): Roteador->start()
+#6 {main} 
+ ################################################## 
+[2025-07-26 13:50:26.000] [Throwable] 
+ Throwable:
+Message: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ID_usuario' in 'where clause'
+Code: 42S22
+File: C:\xampp\htdocs\api\src\DAO\AnalisePlantaDAO.php
+Line: 58
+Trace:
+#0 C:\xampp\htdocs\api\src\DAO\AnalisePlantaDAO.php(58): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\api\src\controller\AnalisePlantaControl.php(9): AnalisePlantaDAO->readByIdUsuario(3)
+#2 C:\xampp\htdocs\api\src\routes\Roteador.php(747): AnalisePlantaControl->index(3)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('3')
+#4 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#5 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#6 C:\xampp\htdocs\api\src\routes\Roteador.php(863): Router->run()
+#7 C:\xampp\htdocs\api.php(4): Roteador->start()
+#8 {main} 
+ ################################################## 
+[2025-07-26 14:45:26.000] [Throwable] 
+ Throwable:
+Message: AnalisePlantaDAO::create(): Argument #2 ($idUsuario) must be of type int, null given, called in C:\xampp\htdocs\api\src\controller\AnalisePlantaControl.php on line 95
+Code: 0
+File: C:\xampp\htdocs\api\src\DAO\AnalisePlantaDAO.php
+Line: 63
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\AnalisePlantaControl.php(95): AnalisePlantaDAO->create(Object(AnalisePlanta), NULL)
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(800): AnalisePlantaControl->store(Object(stdClass))
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('3')
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(887): Router->run()
+#6 C:\xampp\htdocs\api.php(4): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-26 14:46:02.000] [Throwable] 
+ Throwable:
+Message: AnalisePlantaDAO::create(): Argument #2 ($idUsuario) must be of type int, null given, called in C:\xampp\htdocs\api\src\controller\AnalisePlantaControl.php on line 95
+Code: 0
+File: C:\xampp\htdocs\api\src\DAO\AnalisePlantaDAO.php
+Line: 63
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\AnalisePlantaControl.php(95): AnalisePlantaDAO->create(Object(AnalisePlanta), NULL)
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(800): AnalisePlantaControl->store(Object(stdClass))
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('3')
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(887): Router->run()
+#6 C:\xampp\htdocs\api.php(4): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-26 14:47:31.000] [Throwable] 
+ Throwable:
+Message: AnalisePlantaDAO::create(): Argument #2 ($idUsuario) must be of type int, null given, called in C:\xampp\htdocs\api\src\controller\AnalisePlantaControl.php on line 95
+Code: 0
+File: C:\xampp\htdocs\api\src\DAO\AnalisePlantaDAO.php
+Line: 63
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\AnalisePlantaControl.php(95): AnalisePlantaDAO->create(Object(AnalisePlanta), NULL)
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(800): AnalisePlantaControl->store(Object(stdClass))
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('3')
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(887): Router->run()
+#6 C:\xampp\htdocs\api.php(4): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-26 14:47:56.000] [Throwable] 
+ Throwable:
+Message: AnalisePlantaDAO::create(): Argument #2 ($idUsuario) must be of type int, null given, called in C:\xampp\htdocs\api\src\controller\AnalisePlantaControl.php on line 95
+Code: 0
+File: C:\xampp\htdocs\api\src\DAO\AnalisePlantaDAO.php
+Line: 63
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\AnalisePlantaControl.php(95): AnalisePlantaDAO->create(Object(AnalisePlanta), NULL)
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(800): AnalisePlantaControl->store(Object(stdClass))
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('3')
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(887): Router->run()
+#6 C:\xampp\htdocs\api.php(4): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-26 14:47:59.000] [Throwable] 
+ Throwable:
+Message: AnalisePlantaDAO::create(): Argument #2 ($idUsuario) must be of type int, null given, called in C:\xampp\htdocs\api\src\controller\AnalisePlantaControl.php on line 95
+Code: 0
+File: C:\xampp\htdocs\api\src\DAO\AnalisePlantaDAO.php
+Line: 63
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\AnalisePlantaControl.php(95): AnalisePlantaDAO->create(Object(AnalisePlanta), NULL)
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(800): AnalisePlantaControl->store(Object(stdClass))
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('3')
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(887): Router->run()
+#6 C:\xampp\htdocs\api.php(4): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-26 14:48:00.000] [Throwable] 
+ Throwable:
+Message: AnalisePlantaDAO::create(): Argument #2 ($idUsuario) must be of type int, null given, called in C:\xampp\htdocs\api\src\controller\AnalisePlantaControl.php on line 95
+Code: 0
+File: C:\xampp\htdocs\api\src\DAO\AnalisePlantaDAO.php
+Line: 63
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\AnalisePlantaControl.php(95): AnalisePlantaDAO->create(Object(AnalisePlanta), NULL)
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(800): AnalisePlantaControl->store(Object(stdClass))
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('3')
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(887): Router->run()
+#6 C:\xampp\htdocs\api.php(4): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-26 14:49:00.000] [Throwable] 
+ Throwable:
+Message: AnalisePlantaDAO::create(): Argument #2 ($idUsuario) must be of type int, null given, called in C:\xampp\htdocs\api\src\controller\AnalisePlantaControl.php on line 95
+Code: 0
+File: C:\xampp\htdocs\api\src\DAO\AnalisePlantaDAO.php
+Line: 63
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\AnalisePlantaControl.php(95): AnalisePlantaDAO->create(Object(AnalisePlanta), NULL)
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(800): AnalisePlantaControl->store(Object(stdClass))
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('3')
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(887): Router->run()
+#6 C:\xampp\htdocs\api.php(4): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-26 14:49:02.000] [Throwable] 
+ Throwable:
+Message: AnalisePlantaDAO::create(): Argument #2 ($idUsuario) must be of type int, null given, called in C:\xampp\htdocs\api\src\controller\AnalisePlantaControl.php on line 95
+Code: 0
+File: C:\xampp\htdocs\api\src\DAO\AnalisePlantaDAO.php
+Line: 63
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\AnalisePlantaControl.php(95): AnalisePlantaDAO->create(Object(AnalisePlanta), NULL)
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(800): AnalisePlantaControl->store(Object(stdClass))
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('3')
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(887): Router->run()
+#6 C:\xampp\htdocs\api.php(4): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-26 14:49:47.000] [Throwable] 
+ Throwable:
+Message: Unknown named parameter $message
+Code: 0
+File: C:\xampp\htdocs\api\src\DAO\AnalisePlantaDAO.php
+Line: 71
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\AnalisePlantaControl.php(95): AnalisePlantaDAO->create(Object(AnalisePlanta), 3)
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(801): AnalisePlantaControl->store(Object(stdClass))
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('3')
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(888): Router->run()
+#6 C:\xampp\htdocs\api.php(4): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-26 14:50:30.000] [THROWABLE] 
+ Usuário não autorizado a criar análise de planta. 
+ ################################################## 
+[2025-07-26 15:00:19.000] [Throwable] 
+ Throwable:
+Message: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`smartgrow_db`.`analise_planta`, CONSTRAINT `analise_planta_ibfk_1` FOREIGN KEY (`ID_planta_usuario`) REFERENCES `planta_usuario` (`ID`))
+Code: 23000
+File: C:\xampp\htdocs\api\src\DAO\AnalisePlantaDAO.php
+Line: 90
+Trace:
+#0 C:\xampp\htdocs\api\src\DAO\AnalisePlantaDAO.php(90): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\api\src\controller\AnalisePlantaControl.php(109): AnalisePlantaDAO->create(Object(AnalisePlanta), 3)
+#2 C:\xampp\htdocs\api\src\routes\Roteador.php(801): AnalisePlantaControl->store(Object(stdClass))
+#3 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('3')
+#4 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#5 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#6 C:\xampp\htdocs\api\src\routes\Roteador.php(888): Router->run()
+#7 C:\xampp\htdocs\api.php(4): Roteador->start()
+#8 {main} 
+ ################################################## 
+[2025-07-26 15:01:36.000] [Throwable] 
+ Throwable:
+Message: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`smartgrow_db`.`analise_planta`, CONSTRAINT `analise_planta_ibfk_1` FOREIGN KEY (`ID_planta_usuario`) REFERENCES `planta_usuario` (`ID`))
+Code: 23000
+File: C:\xampp\htdocs\api\src\DAO\AnalisePlantaDAO.php
+Line: 90
+Trace:
+#0 C:\xampp\htdocs\api\src\DAO\AnalisePlantaDAO.php(90): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\api\src\controller\AnalisePlantaControl.php(109): AnalisePlantaDAO->create(Object(AnalisePlanta), 3)
+#2 C:\xampp\htdocs\api\src\routes\Roteador.php(801): AnalisePlantaControl->store(Object(stdClass))
+#3 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('3')
+#4 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#5 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#6 C:\xampp\htdocs\api\src\routes\Roteador.php(888): Router->run()
+#7 C:\xampp\htdocs\api.php(4): Roteador->start()
+#8 {main} 
+ ################################################## 
+[2025-07-26 15:03:03.000] [Throwable] 
+ Throwable:
+Message: AnalisePlantaDAO::readByIdAndUser(): Return value must be of type AnalisePlanta|false, none returned
+Code: 0
+File: C:\xampp\htdocs\api\src\DAO\AnalisePlantaDAO.php
+Line: 74
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\AnalisePlantaControl.php(96): AnalisePlantaDAO->readByIdAndUser(Object(AnalisePlanta), 3)
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(801): AnalisePlantaControl->store(Object(stdClass))
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('4')
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(888): Router->run()
+#6 C:\xampp\htdocs\api.php(4): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-26 15:15:35.000] [Throwable] 
+ Throwable:
+Message: AnalisePlantaDAO::readByIdAndUser(): Argument #2 ($idUsuario) must be of type int, null given, called in C:\xampp\htdocs\api\src\controller\AnalisePlantaControl.php on line 133
+Code: 0
+File: C:\xampp\htdocs\api\src\DAO\AnalisePlantaDAO.php
+Line: 63
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\AnalisePlantaControl.php(133): AnalisePlantaDAO->readByIdAndUser(Object(AnalisePlanta), NULL)
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(816): AnalisePlantaControl->delete(11, 3)
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('11')
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(890): Router->run()
+#6 C:\xampp\htdocs\api.php(4): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-26 15:16:40.000] [Throwable] 
+ Throwable:
+Message: AnalisePlantaDAO::readByIdAndUser(): Argument #1 ($analise) must be of type AnalisePlanta, null given, called in C:\xampp\htdocs\api\src\controller\AnalisePlantaControl.php on line 133
+Code: 0
+File: C:\xampp\htdocs\api\src\DAO\AnalisePlantaDAO.php
+Line: 63
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\AnalisePlantaControl.php(133): AnalisePlantaDAO->readByIdAndUser(NULL, 3)
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(816): AnalisePlantaControl->delete(17, 3)
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('17')
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(890): Router->run()
+#6 C:\xampp\htdocs\api.php(4): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-26 17:26:46.000] [Throwable] 
+ Throwable:
+Message: Unknown named parameter $analiseID
+Code: 0
+File: C:\xampp\htdocs\api\src\controller\AnaliseRecControl.php
+Line: 24
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Roteador.php(857): AnaliseRecControl->show(4, 3)
+#1 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('4')
+#2 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(922): Router->run()
+#5 C:\xampp\htdocs\api.php(4): Roteador->start()
+#6 {main} 
+ ################################################## 
+[2025-07-26 17:27:06.000] [Throwable] 
+ Throwable:
+Message: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM analise_planta
+                    WHERE ID = '4'' at line 2
+Code: 42000
+File: C:\xampp\htdocs\api\src\DAO\AnaliseRecDAO.php
+Line: 41
+Trace:
+#0 C:\xampp\htdocs\api\src\DAO\AnaliseRecDAO.php(41): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\api\src\controller\AnaliseRecControl.php(24): AnaliseRecDAO->readAnaliseById(4)
+#2 C:\xampp\htdocs\api\src\routes\Roteador.php(857): AnaliseRecControl->show(4, 3)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('4')
+#4 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#5 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#6 C:\xampp\htdocs\api\src\routes\Roteador.php(922): Router->run()
+#7 C:\xampp\htdocs\api.php(4): Roteador->start()
+#8 {main} 
+ ################################################## 
+[2025-07-26 17:27:16.000] [Throwable] 
+ Throwable:
+Message: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM analise_planta
+                    WHERE ID = '9'' at line 2
+Code: 42000
+File: C:\xampp\htdocs\api\src\DAO\AnaliseRecDAO.php
+Line: 41
+Trace:
+#0 C:\xampp\htdocs\api\src\DAO\AnaliseRecDAO.php(41): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\api\src\controller\AnaliseRecControl.php(24): AnaliseRecDAO->readAnaliseById(9)
+#2 C:\xampp\htdocs\api\src\routes\Roteador.php(857): AnaliseRecControl->show(9, 3)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('9')
+#4 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#5 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#6 C:\xampp\htdocs\api\src\routes\Roteador.php(922): Router->run()
+#7 C:\xampp\htdocs\api.php(4): Roteador->start()
+#8 {main} 
+ ################################################## 
+[2025-07-26 17:28:49.000] [Throwable] 
+ Throwable:
+Message: AnaliseRecDAO::readByPlantaUsuario(): Return value must be of type ?int, stdClass returned
+Code: 0
+File: C:\xampp\htdocs\api\src\DAO\AnaliseRecDAO.php
+Line: 59
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\AnaliseRecControl.php(35): AnaliseRecDAO->readByPlantaUsuario(4)
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(857): AnaliseRecControl->show(20, 3)
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('20')
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(922): Router->run()
+#6 C:\xampp\htdocs\api.php(4): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-26 17:29:27.000] [Throwable] 
+ Throwable:
+Message: AnaliseRecDAO::readByPlantaUsuario(): Return value must be of type ?int, stdClass returned
+Code: 0
+File: C:\xampp\htdocs\api\src\DAO\AnaliseRecDAO.php
+Line: 59
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\AnaliseRecControl.php(35): AnaliseRecDAO->readByPlantaUsuario(4)
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(857): AnaliseRecControl->show(20, 3)
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('20')
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(922): Router->run()
+#6 C:\xampp\htdocs\api.php(4): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-26 17:29:29.000] [Throwable] 
+ Throwable:
+Message: AnaliseRecDAO::readByPlantaUsuario(): Return value must be of type ?int, stdClass returned
+Code: 0
+File: C:\xampp\htdocs\api\src\DAO\AnaliseRecDAO.php
+Line: 59
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\AnaliseRecControl.php(35): AnaliseRecDAO->readByPlantaUsuario(4)
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(857): AnaliseRecControl->show(20, 3)
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('20')
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(922): Router->run()
+#6 C:\xampp\htdocs\api.php(4): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-26 17:29:30.000] [Throwable] 
+ Throwable:
+Message: AnaliseRecDAO::readByPlantaUsuario(): Return value must be of type ?int, stdClass returned
+Code: 0
+File: C:\xampp\htdocs\api\src\DAO\AnaliseRecDAO.php
+Line: 59
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\AnaliseRecControl.php(35): AnaliseRecDAO->readByPlantaUsuario(4)
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(857): AnaliseRecControl->show(20, 3)
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('20')
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(922): Router->run()
+#6 C:\xampp\htdocs\api.php(4): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-26 17:29:30.000] [Throwable] 
+ Throwable:
+Message: AnaliseRecDAO::readByPlantaUsuario(): Return value must be of type ?int, stdClass returned
+Code: 0
+File: C:\xampp\htdocs\api\src\DAO\AnaliseRecDAO.php
+Line: 59
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\AnaliseRecControl.php(35): AnaliseRecDAO->readByPlantaUsuario(4)
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(857): AnaliseRecControl->show(20, 3)
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('20')
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(922): Router->run()
+#6 C:\xampp\htdocs\api.php(4): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-26 17:29:31.000] [Throwable] 
+ Throwable:
+Message: AnaliseRecDAO::readByPlantaUsuario(): Return value must be of type ?int, stdClass returned
+Code: 0
+File: C:\xampp\htdocs\api\src\DAO\AnaliseRecDAO.php
+Line: 59
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\AnaliseRecControl.php(35): AnaliseRecDAO->readByPlantaUsuario(4)
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(857): AnaliseRecControl->show(20, 3)
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('20')
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(922): Router->run()
+#6 C:\xampp\htdocs\api.php(4): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-26 17:32:45.000] [Throwable] 
+ Throwable:
+Message: AnaliseRecDAO::readByPlantaUsuario(): Argument #1 ($idPesquisa) must be of type int, AnalisePlanta given, called in C:\xampp\htdocs\api\src\controller\AnaliseRecControl.php on line 35
+Code: 0
+File: C:\xampp\htdocs\api\src\DAO\AnaliseRecDAO.php
+Line: 48
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\AnaliseRecControl.php(35): AnaliseRecDAO->readByPlantaUsuario(Object(AnalisePlanta))
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(857): AnaliseRecControl->show(20, 3)
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('20')
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(922): Router->run()
+#6 C:\xampp\htdocs\api.php(4): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-26 17:33:11.000] [Throwable] 
+ Throwable:
+Message: AnaliseRecDAO::readByPlantaUsuario(): Argument #1 ($idPesquisa) must be of type int, AnalisePlanta given, called in C:\xampp\htdocs\api\src\controller\AnaliseRecControl.php on line 35
+Code: 0
+File: C:\xampp\htdocs\api\src\DAO\AnaliseRecDAO.php
+Line: 48
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\AnaliseRecControl.php(35): AnaliseRecDAO->readByPlantaUsuario(Object(AnalisePlanta))
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(857): AnaliseRecControl->show(20, 3)
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('20')
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(922): Router->run()
+#6 C:\xampp\htdocs\api.php(4): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-26 17:35:21.000] [Throwable] 
+ Throwable:
+Message: AnaliseRecDAO::readByPlantaUsuario(): Return value must be of type ?int, stdClass returned
+Code: 0
+File: C:\xampp\htdocs\api\src\DAO\AnaliseRecDAO.php
+Line: 59
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\AnaliseRecControl.php(35): AnaliseRecDAO->readByPlantaUsuario(4)
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(857): AnaliseRecControl->show(20, 3)
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('20')
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(922): Router->run()
+#6 C:\xampp\htdocs\api.php(4): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-26 17:38:03.000] [Throwable] 
+ Throwable:
+Message: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ID_recomendacao' in 'field list'
+Code: 42S22
+File: C:\xampp\htdocs\api\src\DAO\AnaliseRecDAO.php
+Line: 26
+Trace:
+#0 C:\xampp\htdocs\api\src\DAO\AnaliseRecDAO.php(26): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\api\src\controller\AnaliseRecControl.php(37): AnaliseRecDAO->readById(20)
+#2 C:\xampp\htdocs\api\src\routes\Roteador.php(857): AnaliseRecControl->show(20, 3)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('20')
+#4 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#5 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#6 C:\xampp\htdocs\api\src\routes\Roteador.php(922): Router->run()
+#7 C:\xampp\htdocs\api.php(4): Roteador->start()
+#8 {main} 
+ ################################################## 
+[2025-07-26 17:39:00.000] [Throwable] 
+ Throwable:
+Message: Too few arguments to function RecomendacoesDAO::readByID(), 0 passed in C:\xampp\htdocs\api\src\controller\AnaliseRecControl.php on line 39 and exactly 1 expected
+Code: 0
+File: C:\xampp\htdocs\api\src\DAO\RecomendacoesDAO.php
+Line: 20
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\AnaliseRecControl.php(39): RecomendacoesDAO->readByID()
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(857): AnaliseRecControl->show(20, 3)
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('20')
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(922): Router->run()
+#6 C:\xampp\htdocs\api.php(4): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-26 17:42:06.000] [Throwable] 
+ Throwable:
+Message: Too few arguments to function AnaliseRecomendacao::__construct(), 0 passed in C:\xampp\htdocs\api\src\DAO\AnaliseRecDAO.php on line 30 and exactly 2 expected
+Code: 0
+File: C:\xampp\htdocs\api\src\models\AnaliseRecomendacao.php
+Line: 4
+Trace:
+#0 C:\xampp\htdocs\api\src\DAO\AnaliseRecDAO.php(30): AnaliseRecomendacao->__construct()
+#1 C:\xampp\htdocs\api\src\controller\AnaliseRecControl.php(37): AnaliseRecDAO->readById(20)
+#2 C:\xampp\htdocs\api\src\routes\Roteador.php(857): AnaliseRecControl->show(20, 3)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('20')
+#4 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#5 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#6 C:\xampp\htdocs\api\src\routes\Roteador.php(922): Router->run()
+#7 C:\xampp\htdocs\api.php(4): Roteador->start()
+#8 {main} 
+ ################################################## 
+[2025-07-26 17:44:32.000] [Throwable] 
+ Throwable:
+Message: Too few arguments to function AnaliseRecomendacao::__construct(), 0 passed in C:\xampp\htdocs\api\src\DAO\AnaliseRecDAO.php on line 30 and exactly 2 expected
+Code: 0
+File: C:\xampp\htdocs\api\src\models\AnaliseRecomendacao.php
+Line: 4
+Trace:
+#0 C:\xampp\htdocs\api\src\DAO\AnaliseRecDAO.php(30): AnaliseRecomendacao->__construct()
+#1 C:\xampp\htdocs\api\src\controller\AnaliseRecControl.php(37): AnaliseRecDAO->readById(20)
+#2 C:\xampp\htdocs\api\src\routes\Roteador.php(857): AnaliseRecControl->show(20, 3)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('20')
+#4 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#5 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#6 C:\xampp\htdocs\api\src\routes\Roteador.php(922): Router->run()
+#7 C:\xampp\htdocs\api.php(4): Roteador->start()
+#8 {main} 
+ ################################################## 
+[2025-07-26 17:44:33.000] [Throwable] 
+ Throwable:
+Message: Too few arguments to function AnaliseRecomendacao::__construct(), 0 passed in C:\xampp\htdocs\api\src\DAO\AnaliseRecDAO.php on line 30 and exactly 2 expected
+Code: 0
+File: C:\xampp\htdocs\api\src\models\AnaliseRecomendacao.php
+Line: 4
+Trace:
+#0 C:\xampp\htdocs\api\src\DAO\AnaliseRecDAO.php(30): AnaliseRecomendacao->__construct()
+#1 C:\xampp\htdocs\api\src\controller\AnaliseRecControl.php(37): AnaliseRecDAO->readById(20)
+#2 C:\xampp\htdocs\api\src\routes\Roteador.php(857): AnaliseRecControl->show(20, 3)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('20')
+#4 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#5 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#6 C:\xampp\htdocs\api\src\routes\Roteador.php(922): Router->run()
+#7 C:\xampp\htdocs\api.php(4): Roteador->start()
+#8 {main} 
+ ################################################## 
+[2025-07-26 17:44:35.000] [Throwable] 
+ Throwable:
+Message: Too few arguments to function AnaliseRecomendacao::__construct(), 0 passed in C:\xampp\htdocs\api\src\DAO\AnaliseRecDAO.php on line 30 and exactly 2 expected
+Code: 0
+File: C:\xampp\htdocs\api\src\models\AnaliseRecomendacao.php
+Line: 4
+Trace:
+#0 C:\xampp\htdocs\api\src\DAO\AnaliseRecDAO.php(30): AnaliseRecomendacao->__construct()
+#1 C:\xampp\htdocs\api\src\controller\AnaliseRecControl.php(37): AnaliseRecDAO->readById(20)
+#2 C:\xampp\htdocs\api\src\routes\Roteador.php(857): AnaliseRecControl->show(20, 3)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('20')
+#4 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#5 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#6 C:\xampp\htdocs\api\src\routes\Roteador.php(922): Router->run()
+#7 C:\xampp\htdocs\api.php(4): Roteador->start()
+#8 {main} 
+ ################################################## 
+[2025-07-26 17:45:23.000] [Throwable] 
+ Throwable:
+Message: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':idRecomendacao' at line 3
+Code: 42000
+File: C:\xampp\htdocs\api\src\DAO\RecomendacoesDAO.php
+Line: 25
+Trace:
+#0 C:\xampp\htdocs\api\src\DAO\RecomendacoesDAO.php(25): PDO->query('SELECT *\r\n     ...')
+#1 C:\xampp\htdocs\api\src\controller\AnaliseRecControl.php(39): RecomendacoesDAO->readByID(0)
+#2 C:\xampp\htdocs\api\src\routes\Roteador.php(857): AnaliseRecControl->show(20, 3)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('20')
+#4 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#5 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#6 C:\xampp\htdocs\api\src\routes\Roteador.php(922): Router->run()
+#7 C:\xampp\htdocs\api.php(4): Roteador->start()
+#8 {main} 
+ ################################################## 
+[2025-07-26 17:48:17.000] [Throwable] 
+ Throwable:
+Message: Call to a member function getIDRecomendacao() on null
+Code: 0
+File: C:\xampp\htdocs\api\src\controller\AnaliseRecControl.php
+Line: 39
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Roteador.php(857): AnaliseRecControl->show(20, 3)
+#1 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('20')
+#2 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(922): Router->run()
+#5 C:\xampp\htdocs\api.php(4): Roteador->start()
+#6 {main} 
+ ################################################## 
+[2025-07-26 17:48:46.000] [Throwable] 
+ Throwable:
+Message: Call to a member function getIDRecomendacao() on null
+Code: 0
+File: C:\xampp\htdocs\api\src\controller\AnaliseRecControl.php
+Line: 39
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Roteador.php(857): AnaliseRecControl->show(20, 3)
+#1 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('20')
+#2 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(922): Router->run()
+#5 C:\xampp\htdocs\api.php(4): Roteador->start()
+#6 {main} 
+ ################################################## 
+[2025-07-26 17:51:14.000] [Throwable] 
+ Throwable:
+Message: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':idRecomendacao' at line 3
+Code: 42000
+File: C:\xampp\htdocs\api\src\DAO\RecomendacoesDAO.php
+Line: 25
+Trace:
+#0 C:\xampp\htdocs\api\src\DAO\RecomendacoesDAO.php(25): PDO->query('SELECT *\r\n     ...')
+#1 C:\xampp\htdocs\api\src\controller\AnaliseRecControl.php(39): RecomendacoesDAO->readByID(0)
+#2 C:\xampp\htdocs\api\src\routes\Roteador.php(857): AnaliseRecControl->show(20, 3)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('20')
+#4 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#5 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#6 C:\xampp\htdocs\api\src\routes\Roteador.php(922): Router->run()
+#7 C:\xampp\htdocs\api.php(4): Roteador->start()
+#8 {main} 
+ ################################################## 
+[2025-07-26 17:53:17.000] [Throwable] 
+ Throwable:
+Message: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':idRecomendacao' at line 3
+Code: 42000
+File: C:\xampp\htdocs\api\src\DAO\RecomendacoesDAO.php
+Line: 25
+Trace:
+#0 C:\xampp\htdocs\api\src\DAO\RecomendacoesDAO.php(25): PDO->query('SELECT *\r\n     ...')
+#1 C:\xampp\htdocs\api\src\controller\AnaliseRecControl.php(39): RecomendacoesDAO->readByID(0)
+#2 C:\xampp\htdocs\api\src\routes\Roteador.php(857): AnaliseRecControl->show(20, 3)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('20')
+#4 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#5 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#6 C:\xampp\htdocs\api\src\routes\Roteador.php(922): Router->run()
+#7 C:\xampp\htdocs\api.php(4): Roteador->start()
+#8 {main} 
+ ################################################## 
+[2025-07-26 17:53:19.000] [Throwable] 
+ Throwable:
+Message: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':idRecomendacao' at line 3
+Code: 42000
+File: C:\xampp\htdocs\api\src\DAO\RecomendacoesDAO.php
+Line: 25
+Trace:
+#0 C:\xampp\htdocs\api\src\DAO\RecomendacoesDAO.php(25): PDO->query('SELECT *\r\n     ...')
+#1 C:\xampp\htdocs\api\src\controller\AnaliseRecControl.php(39): RecomendacoesDAO->readByID(0)
+#2 C:\xampp\htdocs\api\src\routes\Roteador.php(857): AnaliseRecControl->show(20, 3)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('20')
+#4 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#5 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#6 C:\xampp\htdocs\api\src\routes\Roteador.php(922): Router->run()
+#7 C:\xampp\htdocs\api.php(4): Roteador->start()
+#8 {main} 
+ ################################################## 
+[2025-07-26 17:53:20.000] [Throwable] 
+ Throwable:
+Message: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':idRecomendacao' at line 3
+Code: 42000
+File: C:\xampp\htdocs\api\src\DAO\RecomendacoesDAO.php
+Line: 25
+Trace:
+#0 C:\xampp\htdocs\api\src\DAO\RecomendacoesDAO.php(25): PDO->query('SELECT *\r\n     ...')
+#1 C:\xampp\htdocs\api\src\controller\AnaliseRecControl.php(39): RecomendacoesDAO->readByID(0)
+#2 C:\xampp\htdocs\api\src\routes\Roteador.php(857): AnaliseRecControl->show(20, 3)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('20')
+#4 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#5 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#6 C:\xampp\htdocs\api\src\routes\Roteador.php(922): Router->run()
+#7 C:\xampp\htdocs\api.php(4): Roteador->start()
+#8 {main} 
+ ################################################## 
+[2025-07-26 17:58:17.000] [Throwable] 
+ Throwable:
+Message: Call to a member function getIDRecomendacao() on null
+Code: 0
+File: C:\xampp\htdocs\api\src\controller\AnaliseRecControl.php
+Line: 39
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Roteador.php(857): AnaliseRecControl->show(20, 3)
+#1 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('20')
+#2 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(922): Router->run()
+#5 C:\xampp\htdocs\api.php(4): Roteador->start()
+#6 {main} 
+ ################################################## 
+[2025-07-26 17:58:47.000] [Throwable] 
+ Throwable:
+Message: Call to a member function getIDRecomendacao() on null
+Code: 0
+File: C:\xampp\htdocs\api\src\controller\AnaliseRecControl.php
+Line: 39
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Roteador.php(857): AnaliseRecControl->show(20, 3)
+#1 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('20')
+#2 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(922): Router->run()
+#5 C:\xampp\htdocs\api.php(4): Roteador->start()
+#6 {main} 
+ ################################################## 
+[2025-07-26 17:58:49.000] [Throwable] 
+ Throwable:
+Message: Call to a member function getIDRecomendacao() on null
+Code: 0
+File: C:\xampp\htdocs\api\src\controller\AnaliseRecControl.php
+Line: 39
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Roteador.php(857): AnaliseRecControl->show(20, 3)
+#1 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('20')
+#2 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(922): Router->run()
+#5 C:\xampp\htdocs\api.php(4): Roteador->start()
+#6 {main} 
+ ################################################## 
+[2025-07-26 18:02:12.000] [Throwable] 
+ Throwable:
+Message: Call to a member function getIDRecomendacao() on null
+Code: 0
+File: C:\xampp\htdocs\api\src\controller\AnaliseRecControl.php
+Line: 39
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Roteador.php(857): AnaliseRecControl->show(20, 3)
+#1 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('20')
+#2 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(922): Router->run()
+#5 C:\xampp\htdocs\api.php(4): Roteador->start()
+#6 {main} 
+ ################################################## 
+[2025-07-26 18:02:14.000] [Throwable] 
+ Throwable:
+Message: Call to a member function getIDRecomendacao() on null
+Code: 0
+File: C:\xampp\htdocs\api\src\controller\AnaliseRecControl.php
+Line: 39
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Roteador.php(857): AnaliseRecControl->show(20, 3)
+#1 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('20')
+#2 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(922): Router->run()
+#5 C:\xampp\htdocs\api.php(4): Roteador->start()
+#6 {main} 
+ ################################################## 
+[2025-07-26 18:04:18.000] [Throwable] 
+ Throwable:
+Message: Call to a member function getIDRecomendacao() on null
+Code: 0
+File: C:\xampp\htdocs\api\src\controller\AnaliseRecControl.php
+Line: 39
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Roteador.php(857): AnaliseRecControl->show(20, 3)
+#1 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('20')
+#2 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(922): Router->run()
+#5 C:\xampp\htdocs\api.php(4): Roteador->start()
+#6 {main} 
+ ################################################## 
+[2025-07-26 18:04:38.000] [Throwable] 
+ Throwable:
+Message: Call to a member function getIDRecomendacao() on null
+Code: 0
+File: C:\xampp\htdocs\api\src\controller\AnaliseRecControl.php
+Line: 39
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Roteador.php(857): AnaliseRecControl->show(20, 3)
+#1 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('20')
+#2 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(922): Router->run()
+#5 C:\xampp\htdocs\api.php(4): Roteador->start()
+#6 {main} 
+ ################################################## 
+[2025-07-26 19:49:13.000] [Throwable] 
+ Throwable:
+Message: Class "RecomendacoesMiddleware" not found
+Code: 0
+File: C:\xampp\htdocs\api\src\routes\Roteador.php
+Line: 871
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#1 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#2 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#3 C:\xampp\htdocs\api\src\routes\Roteador.php(974): Router->run()
+#4 C:\xampp\htdocs\api.php(4): Roteador->start()
+#5 {main} 
+ ################################################## 
+[2025-07-26 19:54:04.000] [Throwable] 
+ Throwable:
+Message: RecomendacoesMiddleware::stringJsonToStdClass(): Return value must be of type stdClass, null returned
+Code: 0
+File: C:\xampp\htdocs\api\src\middlewares\RecomendacoesMiddleware.php
+Line: 47
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Roteador.php(873): RecomendacoesMiddleware->stringJsonToStdClass('{\n\t"Dados": {\n\t...')
+#1 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#2 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(975): Router->run()
+#5 C:\xampp\htdocs\api.php(4): Roteador->start()
+#6 {main} 
+ ################################################## 
+[2025-07-26 19:54:18.000] [Throwable] 
+ Throwable:
+Message: Call to a member function hasNotByTitulo() on null
+Code: 0
+File: C:\xampp\htdocs\api\src\routes\Roteador.php
+Line: 878
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#1 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#2 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#3 C:\xampp\htdocs\api\src\routes\Roteador.php(975): Router->run()
+#4 C:\xampp\htdocs\api.php(4): Roteador->start()
+#5 {main} 
+ ################################################## 
+[2025-07-26 19:55:59.000] [Throwable] 
+ Throwable:
+Message: Call to a member function hasNotByTitulo() on null
+Code: 0
+File: C:\xampp\htdocs\api\src\routes\Roteador.php
+Line: 878
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#1 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#2 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#3 C:\xampp\htdocs\api\src\routes\Roteador.php(975): Router->run()
+#4 C:\xampp\htdocs\api.php(4): Roteador->start()
+#5 {main} 
+ ################################################## 
+[2025-07-26 19:59:04.000] [Throwable] 
+ Throwable:
+Message: Call to undefined method RecomendacoesDAO::readByTitulo()
+Code: 0
+File: C:\xampp\htdocs\api\src\middlewares\RecomendacoesMiddleware.php
+Line: 52
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Roteador.php(878): RecomendacoesMiddleware->hasNotByTitulo('Regar com \xC3\xA1gua...')
+#1 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#2 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(975): Router->run()
+#5 C:\xampp\htdocs\api.php(4): Roteador->start()
+#6 {main} 
+ ################################################## 
+[2025-07-26 20:08:58.000] [Throwable] 
+ Throwable:
+Message: Call to a member function delete() on null
+Code: 0
+File: C:\xampp\htdocs\api\src\controller\RecomendacoesControl.php
+Line: 217
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Roteador.php(907): RecomendacoesControl->delete(3)
+#1 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('3')
+#2 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(993): Router->run()
+#5 C:\xampp\htdocs\api.php(4): Roteador->start()
+#6 {main} 
+ ################################################## 
+[2025-07-26 20:09:37.000] [Throwable] 
+ Throwable:
+Message: Call to undefined method RecomendacoesDAO::delete()
+Code: 0
+File: C:\xampp\htdocs\api\src\controller\RecomendacoesControl.php
+Line: 217
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Roteador.php(907): RecomendacoesControl->delete(3)
+#1 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('3')
+#2 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(993): Router->run()
+#5 C:\xampp\htdocs\api.php(4): Roteador->start()
+#6 {main} 
+ ################################################## 
+[2025-07-26 20:15:10.000] [Throwable] 
+ Throwable:
+Message: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`smartgrow_db`.`planta_usuario`, CONSTRAINT `planta_usuario_ibfk_1` FOREIGN KEY (`IdUsuario`) REFERENCES `cadastro_usuario` (`ID_usuario`))
+Code: 23000
+File: C:\xampp\htdocs\api\src\DAO\CadastroDAO.php
+Line: 121
+Trace:
+#0 C:\xampp\htdocs\api\src\DAO\CadastroDAO.php(121): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\api\src\controller\CadastroControl.php(112): CadastroDAO->delete(1)
+#2 C:\xampp\htdocs\api\src\routes\Roteador.php(220): CadastroControl->delete(1)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('1')
+#4 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#5 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#6 C:\xampp\htdocs\api\src\routes\Roteador.php(993): Router->run()
+#7 C:\xampp\htdocs\api.php(4): Roteador->start()
+#8 {main} 
+ ################################################## 
+[2025-07-27 12:47:08.000] [Throwable] 
+ Throwable:
+Message: Class "CondicoesControl" not found
+Code: 0
+File: C:\xampp\htdocs\api\src\routes\Roteador.php
+Line: 943
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('3')
+#1 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#2 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#3 C:\xampp\htdocs\api\src\routes\Roteador.php(996): Router->run()
+#4 C:\xampp\htdocs\api.php(4): Roteador->start()
+#5 {main} 
+ ################################################## 
+[2025-07-27 13:07:34.000] [Throwable] 
+ Throwable:
+Message: Call to a member function readById() on null
+Code: 0
+File: C:\xampp\htdocs\api\src\controller\CondicoesControl.php
+Line: 64
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Roteador.php(952): CondicoesControl->showByPlantaUsuario('4', 3)
+#1 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('4')
+#2 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(1005): Router->run()
+#5 C:\xampp\htdocs\api.php(4): Roteador->start()
+#6 {main} 
+ ################################################## 
+[2025-07-27 13:15:30.000] [Throwable] 
+ Throwable:
+Message: AnalisePlantaDAO::readByPlantaUsuario(): Return value must be of type array, stdClass returned
+Code: 0
+File: C:\xampp\htdocs\api\src\DAO\AnalisePlantaDAO.php
+Line: 64
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\AnalisePlantaControl.php(58): AnalisePlantaDAO->readByPlantaUsuario(4)
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(786): AnalisePlantaControl->showByPlantaUsuario('4', 3)
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('4')
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(1005): Router->run()
+#6 C:\xampp\htdocs\api.php(4): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-27 14:34:05.000] [Throwable] 
+ Throwable:
+Message: CondicoesPlanta::getDataRegistro(): Return value must be of type ?string, DateTime returned
+Code: 0
+File: C:\xampp\htdocs\api\src\models\CondicoesPlanta.php
+Line: 39
+Trace:
+#0 C:\xampp\htdocs\api\src\DAO\CondicoesDAO.php(51): CondicoesPlanta->getDataRegistro()
+#1 C:\xampp\htdocs\api\src\controller\CondicoesControl.php(111): CondicoesDAO->create(Object(CondicoesPlanta))
+#2 C:\xampp\htdocs\api\src\routes\Roteador.php(971): CondicoesControl->store(Object(stdClass), 3)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('2')
+#4 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#5 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#6 C:\xampp\htdocs\api\src\routes\Roteador.php(1013): Router->run()
+#7 C:\xampp\htdocs\api.php(4): Roteador->start()
+#8 {main} 
+ ################################################## 
+[2025-07-27 14:34:30.000] [Throwable] 
+ Throwable:
+Message: Object of class DateTime could not be converted to string
+Code: 0
+File: C:\xampp\htdocs\api\src\DAO\CondicoesDAO.php
+Line: 49
+Trace:
+#0 C:\xampp\htdocs\api\src\DAO\CondicoesDAO.php(49): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\api\src\controller\CondicoesControl.php(111): CondicoesDAO->create(Object(CondicoesPlanta))
+#2 C:\xampp\htdocs\api\src\routes\Roteador.php(971): CondicoesControl->store(Object(stdClass), 3)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('2')
+#4 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#5 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#6 C:\xampp\htdocs\api\src\routes\Roteador.php(1013): Router->run()
+#7 C:\xampp\htdocs\api.php(4): Roteador->start()
+#8 {main} 
+ ################################################## 
+[2025-07-27 14:36:33.000] [Throwable] 
+ Throwable:
+Message: Call to undefined method CondicoesPlanta::setDataCadastro()
+Code: 0
+File: C:\xampp\htdocs\api\src\DAO\CondicoesDAO.php
+Line: 37
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\CondicoesControl.php(111): CondicoesDAO->create(Object(CondicoesPlanta))
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(971): CondicoesControl->store(Object(stdClass), 3)
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('2')
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(1013): Router->run()
+#6 C:\xampp\htdocs\api.php(4): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-28 10:15:53.000] [Throwable] 
+ Throwable:
+Message: Recomendacoes::setTitulo(): Argument #1 ($titulo) must be of type string, null given, called in C:\xampp\htdocs\api\src\controller\RecomendacoesControl.php on line 207
+Code: 0
+File: C:\xampp\htdocs\api\src\models\Recomendacoes.php
+Line: 31
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\RecomendacoesControl.php(207): Recomendacoes->setTitulo(NULL)
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(920): RecomendacoesControl->importXML(Array)
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(1133): Router->run()
+#6 C:\xampp\htdocs\api.php(4): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-28 10:21:57.000] [Throwable] 
+ Throwable:
+Message: RecomendacoesControl::importXML(): Argument #1 ($xmlFile) must be of type array, null given, called in C:\xampp\htdocs\api\src\routes\Roteador.php on line 920
+Code: 0
+File: C:\xampp\htdocs\api\src\controller\RecomendacoesControl.php
+Line: 190
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Roteador.php(920): RecomendacoesControl->importXML(NULL)
+#1 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#2 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(1133): Router->run()
+#5 C:\xampp\htdocs\api.php(4): Roteador->start()
+#6 {main} 
+ ################################################## 
+[2025-07-28 11:26:02.000] [Throwable] 
+ Throwable:
+Message: Unknown named parameter $xmlFile
+Code: 0
+File: C:\xampp\htdocs\api\src\routes\Roteador.php
+Line: 924
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#1 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#2 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#3 C:\xampp\htdocs\api\src\routes\Roteador.php(1139): Router->run()
+#4 C:\xampp\htdocs\api.php(4): Roteador->start()
+#5 {main} 
+ ################################################## 
+[2025-07-28 11:53:10.000] [Throwable] 
+ Throwable:
+Message: Unknown named parameter $Data
+Code: 0
+File: C:\xampp\htdocs\api\src\middlewares\RecomendacoesMiddleware.php
+Line: 252
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Roteador.php(924): RecomendacoesMiddleware->hasNotByTituloXML(Array)
+#1 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#2 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(1139): Router->run()
+#5 C:\xampp\htdocs\api.php(4): Roteador->start()
+#6 {main} 
+ ################################################## 
+[2025-07-28 12:50:32.000] [Throwable] 
+ Throwable:
+Message: Call to undefined method PlantaControl::importCSV()
+Code: 0
+File: C:\xampp\htdocs\api\src\routes\Roteador.php
+Line: 327
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#1 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#2 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#3 C:\xampp\htdocs\api\src\routes\Roteador.php(1141): Router->run()
+#4 C:\xampp\htdocs\api.php(4): Roteador->start()
+#5 {main} 
+ ################################################## 
+[2025-07-28 12:50:43.000] [Throwable] 
+ Throwable:
+Message: Recomendacoes::setTitulo(): Argument #1 ($titulo) must be of type string, null given, called in C:\xampp\htdocs\api\src\controller\PlantaControl.php on line 162
+Code: 0
+File: C:\xampp\htdocs\api\src\models\Recomendacoes.php
+Line: 31
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\PlantaControl.php(162): Recomendacoes->setTitulo(NULL)
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(327): PlantaControl->import(Array)
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(1141): Router->run()
+#6 C:\xampp\htdocs\api.php(4): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-28 12:51:04.000] [Throwable] 
+ Throwable:
+Message: Recomendacoes::setTitulo(): Argument #1 ($titulo) must be of type string, null given, called in C:\xampp\htdocs\api\src\controller\PlantaControl.php on line 355
+Code: 0
+File: C:\xampp\htdocs\api\src\models\Recomendacoes.php
+Line: 31
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\PlantaControl.php(355): Recomendacoes->setTitulo(NULL)
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(327): PlantaControl->import(Array)
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(1141): Router->run()
+#6 C:\xampp\htdocs\api.php(4): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-28 13:25:59.000] [Throwable] 
+ Throwable:
+Message: PlantaMiddleware::hasNotByNomeXML(): Return value must be of type array, none returned
+Code: 0
+File: C:\xampp\htdocs\api\src\middlewares\PlantaMiddleware.php
+Line: 669
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Roteador.php(369): PlantaMiddleware->hasNotByNomeXML(Array)
+#1 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#2 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(1145): Router->run()
+#5 C:\xampp\htdocs\api.php(4): Roteador->start()
+#6 {main} 
+ ################################################## 
+[2025-07-28 14:18:59.000] [Throwable] 
+ Throwable:
+Message: Call to undefined function IsValidClima()
+Code: 0
+File: C:\xampp\htdocs\api\src\middlewares\PlantaMiddleware.php
+Line: 584
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Roteador.php(347): PlantaMiddleware->hasNotByNomeJson(Array)
+#1 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#2 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(1145): Router->run()
+#5 C:\xampp\htdocs\api.php(4): Roteador->start()
+#6 {main} 
+ ################################################## 
+[2025-07-28 14:50:48.000] [Throwable] 
+ Throwable:
+Message: RecomendacoesMiddleware::isValidTitulo(): Return value must be of type RecomendacoesMiddleware, bool returned
+Code: 0
+File: C:\xampp\htdocs\api\src\middlewares\RecomendacoesMiddleware.php
+Line: 325
+Trace:
+#0 C:\xampp\htdocs\api\src\middlewares\RecomendacoesMiddleware.php(187): RecomendacoesMiddleware->isValidTitulo('Folhas com bord...', true)
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(908): RecomendacoesMiddleware->hasNotByTituloJson(Array)
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(1145): Router->run()
+#6 C:\xampp\htdocs\api.php(4): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-28 14:51:36.000] [Throwable] 
+ Throwable:
+Message: Call to undefined function hasNotByTitulo()
+Code: 0
+File: C:\xampp\htdocs\api\src\middlewares\RecomendacoesMiddleware.php
+Line: 193
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Roteador.php(908): RecomendacoesMiddleware->hasNotByTituloJson(Array)
+#1 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#2 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(1145): Router->run()
+#5 C:\xampp\htdocs\api.php(4): Roteador->start()
+#6 {main} 
+ ################################################## 
+[2025-07-28 20:34:50.000] [Throwable] 
+ Throwable:
+Message: Call to undefined method TokenDAO::getAuthorizationHeader()
+Code: 0
+File: C:\xampp\htdocs\api\src\DAO\TokenDAO.php
+Line: 18
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Roteador.php(110): TokenDAO->invalidarToken('eyJ0eXAiOiJKV1Q...')
+#1 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#2 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(1205): Router->run()
+#5 C:\xampp\htdocs\api.php(4): Roteador->start()
+#6 {main} 
+ ################################################## 
+[2025-07-28 20:35:44.000] [Throwable] 
+ Throwable:
+Message: Call to a member function salvarToken() on null
+Code: 0
+File: C:\xampp\htdocs\api\src\models\MeuTokenJWT.php
+Line: 41
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\LoginControl.php(32): MeuTokenJWT->gerarToken(Object(stdClass))
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(86): LoginControl->autenticar(Object(stdClass))
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(1205): Router->run()
+#6 C:\xampp\htdocs\api.php(4): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-28 20:37:11.000] [Throwable] 
+ Throwable:
+Message: Call to a member function salvarToken() on null
+Code: 0
+File: C:\xampp\htdocs\api\src\models\MeuTokenJWT.php
+Line: 42
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\LoginControl.php(32): MeuTokenJWT->gerarToken(Object(stdClass))
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(86): LoginControl->autenticar(Object(stdClass))
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(1205): Router->run()
+#6 C:\xampp\htdocs\api.php(4): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-28 20:39:43.000] [Throwable] 
+ Throwable:
+Message: Call to a member function prepare() on null
+Code: 0
+File: C:\xampp\htdocs\api\src\DAO\TokenDAO.php
+Line: 8
+Trace:
+#0 C:\xampp\htdocs\api\src\models\MeuTokenJWT.php(59): TokenDAO->salvarToken(1, 'eyJ0eXAiOiJKV1Q...', '2025-08-27 20:3...')
+#1 C:\xampp\htdocs\api\src\controller\LoginControl.php(32): MeuTokenJWT->gerarToken(Object(stdClass))
+#2 C:\xampp\htdocs\api\src\routes\Roteador.php(86): LoginControl->autenticar(Object(stdClass))
+#3 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#4 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#5 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#6 C:\xampp\htdocs\api\src\routes\Roteador.php(1205): Router->run()
+#7 C:\xampp\htdocs\api.php(4): Roteador->start()
+#8 {main} 
+ ################################################## 
+[2025-07-28 20:40:56.000] [Throwable] 
+ Throwable:
+Message: Call to a member function prepare() on null
+Code: 0
+File: C:\xampp\htdocs\api\src\DAO\TokenDAO.php
+Line: 8
+Trace:
+#0 C:\xampp\htdocs\api\src\models\MeuTokenJWT.php(59): TokenDAO->salvarToken(1, 'eyJ0eXAiOiJKV1Q...', '2025-08-27 20:4...')
+#1 C:\xampp\htdocs\api\src\controller\LoginControl.php(32): MeuTokenJWT->gerarToken(Object(stdClass))
+#2 C:\xampp\htdocs\api\src\routes\Roteador.php(86): LoginControl->autenticar(Object(stdClass))
+#3 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#4 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#5 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#6 C:\xampp\htdocs\api\src\routes\Roteador.php(1205): Router->run()
+#7 C:\xampp\htdocs\api.php(4): Roteador->start()
+#8 {main} 
+ ################################################## 
+[2025-07-28 20:52:36.000] [Throwable] 
+ Throwable:
+Message: Call to a member function prepare() on null
+Code: 0
+File: C:\xampp\htdocs\api\src\middlewares\JWTmiddleware.php
+Line: 63
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Roteador.php(766): JWTMiddleware->verificarTokenAtivo()
+#1 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#2 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(1205): Router->run()
+#5 C:\xampp\htdocs\api.php(4): Roteador->start()
+#6 {main} 
+ ################################################## 
+[2025-07-29 10:22:30.000] [Throwable] 
+ Throwable:
+Message: Call to a member function getID() on array
+Code: 0
+File: C:\xampp\htdocs\api\src\controller\PlantaControl.php
+Line: 247
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Roteador.php(422): PlantaControl->exportCSV()
+#1 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#2 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(1208): Router->run()
+#5 C:\xampp\htdocs\api.php(4): Roteador->start()
+#6 {main} 
+ ################################################## 
+[2025-07-29 10:31:57.000] [Throwable] 
+ Throwable:
+Message: Call to a member function getID() on array
+Code: 0
+File: C:\xampp\htdocs\api\src\controller\PlantaControl.php
+Line: 248
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Roteador.php(422): PlantaControl->exportCSV()
+#1 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#2 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(1208): Router->run()
+#5 C:\xampp\htdocs\api.php(4): Roteador->start()
+#6 {main} 
+ ################################################## 
+[2025-07-29 10:43:29.000] [Throwable] 
+ Throwable:
+Message: Call to undefined function int()
+Code: 0
+File: C:\xampp\htdocs\api\src\routes\Roteador.php
+Line: 1146
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('2')
+#1 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#2 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#3 C:\xampp\htdocs\api\src\routes\Roteador.php(1208): Router->run()
+#4 C:\xampp\htdocs\api.php(4): Roteador->start()
+#5 {main} 
+ ################################################## 
+[2025-07-29 10:43:30.000] [Throwable] 
+ Throwable:
+Message: Unknown named parameter $idUsuario
+Code: 0
+File: C:\xampp\htdocs\api\src\routes\Roteador.php
+Line: 701
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#1 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#2 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#3 C:\xampp\htdocs\api\src\routes\Roteador.php(1208): Router->run()
+#4 C:\xampp\htdocs\api.php(4): Roteador->start()
+#5 {main} 
+ ################################################## 
+[2025-07-29 10:43:30.000] [Throwable] 
+ Throwable:
+Message: Call to a member function getIdUsuario() on null
+Code: 0
+File: C:\xampp\htdocs\api\src\controller\PlantaUsuarioControl.php
+Line: 150
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Roteador.php(734): PlantaUsuarioControl->edit(Object(stdClass))
+#1 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('3')
+#2 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(1208): Router->run()
+#5 C:\xampp\htdocs\api.php(4): Roteador->start()
+#6 {main} 
+ ################################################## 
+[2025-07-29 10:43:30.000] [Throwable] 
+ Throwable:
+Message: Call to a member function getIdUsuario() on null
+Code: 0
+File: C:\xampp\htdocs\api\src\controller\PlantaUsuarioControl.php
+Line: 219
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Roteador.php(751): PlantaUsuarioControl->delete(3, 3)
+#1 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('3')
+#2 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(1208): Router->run()
+#5 C:\xampp\htdocs\api.php(4): Roteador->start()
+#6 {main} 
+ ################################################## 
+[2025-07-29 10:43:32.000] [Throwable] 
+ Throwable:
+Message: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'silviadavico@gmail.com' for key 'Email'
+Code: 23000
+File: C:\xampp\htdocs\api\src\DAO\CadastroDAO.php
+Line: 100
+Trace:
+#0 C:\xampp\htdocs\api\src\DAO\CadastroDAO.php(100): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\api\src\controller\CadastroControl.php(99): CadastroDAO->create(Object(CadastroUsuario))
+#2 C:\xampp\htdocs\api\src\routes\Roteador.php(70): CadastroControl->store(Object(stdClass))
+#3 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#4 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#5 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#6 C:\xampp\htdocs\api\src\routes\Roteador.php(1208): Router->run()
+#7 C:\xampp\htdocs\api.php(4): Roteador->start()
+#8 {main} 
+ ################################################## 
+[2025-07-29 11:25:23.000] [Throwable] 
+ Throwable:
+Message: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'arantesazevedo@gmail.com' for key 'Email'
+Code: 23000
+File: C:\xampp\htdocs\api\src\DAO\CadastroDAO.php
+Line: 99
+Trace:
+#0 C:\xampp\htdocs\api\src\DAO\CadastroDAO.php(99): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\api\src\controller\CadastroControl.php(99): CadastroDAO->create(Object(CadastroUsuario))
+#2 C:\xampp\htdocs\api\src\routes\Roteador.php(70): CadastroControl->store(Object(stdClass))
+#3 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#4 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#5 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#6 C:\xampp\htdocs\api\src\routes\Roteador.php(1208): Router->run()
+#7 C:\xampp\htdocs\api.php(4): Roteador->start()
+#8 {main} 
+ ################################################## 
+[2025-07-29 11:29:47.000] [Throwable] 
+ Throwable:
+Message: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'amandaleitedsm@gmail.com' for key 'Email'
+Code: 23000
+File: C:\xampp\htdocs\api\src\DAO\CadastroDAO.php
+Line: 99
+Trace:
+#0 C:\xampp\htdocs\api\src\DAO\CadastroDAO.php(99): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\api\src\controller\CadastroControl.php(99): CadastroDAO->create(Object(CadastroUsuario))
+#2 C:\xampp\htdocs\api\src\routes\Roteador.php(70): CadastroControl->store(Object(stdClass))
+#3 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#4 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#5 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#6 C:\xampp\htdocs\api\src\routes\Roteador.php(1208): Router->run()
+#7 C:\xampp\htdocs\api.php(4): Roteador->start()
+#8 {main} 
+ ################################################## 
+[2025-07-29 12:04:18.000] [Throwable] 
+ Throwable:
+Message: Call to a member function getNome() on null
+Code: 0
+File: C:\xampp\htdocs\api\src\controller\CadastroControl.php
+Line: 50
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Roteador.php(213): CadastroControl->edit(Object(stdClass))
+#1 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('1')
+#2 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(1568): Router->run()
+#5 C:\xampp\htdocs\api.php(4): Roteador->start()
+#6 {main} 
+ ################################################## 
+[2025-07-29 13:09:24.000] [Throwable] 
+ Throwable:
+Message: CadastroDAO::Active(): Argument #1 ($cadastro) must be of type int, CadastroUsuario given, called in C:\xampp\htdocs\api\src\controller\CadastroControl.php on line 150
+Code: 0
+File: C:\xampp\htdocs\api\src\DAO\CadastroDAO.php
+Line: 160
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\CadastroControl.php(150): CadastroDAO->Active(Object(CadastroUsuario))
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(245): CadastroControl->IsActive(8)
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('8')
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(1568): Router->run()
+#6 C:\xampp\htdocs\api.php(4): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-29 13:13:46.000] [Throwable] 
+ Throwable:
+Message: CadastroDAO::Deactivate(): Argument #1 ($cadastro) must be of type int, CadastroUsuario given, called in C:\xampp\htdocs\api\src\controller\CadastroControl.php on line 148
+Code: 0
+File: C:\xampp\htdocs\api\src\DAO\CadastroDAO.php
+Line: 174
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\CadastroControl.php(148): CadastroDAO->Deactivate(Object(CadastroUsuario))
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(245): CadastroControl->IsActive(8)
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('8')
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(1568): Router->run()
+#6 C:\xampp\htdocs\api.php(4): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-29 13:14:46.000] [Throwable] 
+ Throwable:
+Message: CadastroDAO::Deactivate(): Argument #1 ($idCadastro) must be of type int, CadastroUsuario given, called in C:\xampp\htdocs\api\src\controller\CadastroControl.php on line 148
+Code: 0
+File: C:\xampp\htdocs\api\src\DAO\CadastroDAO.php
+Line: 176
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\CadastroControl.php(148): CadastroDAO->Deactivate(Object(CadastroUsuario))
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(245): CadastroControl->IsActive(8)
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('8')
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(1568): Router->run()
+#6 C:\xampp\htdocs\api.php(4): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-29 14:50:12.000] [Throwable] 
+ Throwable:
+Message: Unknown named parameter $idUsuario
+Code: 0
+File: C:\xampp\htdocs\api\src\routes\Roteador.php
+Line: 880
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#1 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#2 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#3 C:\xampp\htdocs\api\src\routes\Roteador.php(1568): Router->run()
+#4 C:\xampp\htdocs\api.php(4): Roteador->start()
+#5 {main} 
+ ################################################## 
+[2025-07-29 14:52:54.000] [Throwable] 
+ Throwable:
+Message: Unknown named parameter $idUsuario
+Code: 0
+File: C:\xampp\htdocs\api\src\routes\Roteador.php
+Line: 880
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#1 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#2 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#3 C:\xampp\htdocs\api\src\routes\Roteador.php(1568): Router->run()
+#4 C:\xampp\htdocs\api.php(4): Roteador->start()
+#5 {main} 
+ ################################################## 
+[2025-07-29 14:55:12.000] [Throwable] 
+ Throwable:
+Message: Call to a member function getIdUsuario() on bool
+Code: 0
+File: C:\xampp\htdocs\api\src\controller\PlantaUsuarioControl.php
+Line: 150
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Roteador.php(922): PlantaUsuarioControl->edit(Object(stdClass))
+#1 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('3')
+#2 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(1568): Router->run()
+#5 C:\xampp\htdocs\api.php(4): Roteador->start()
+#6 {main} 
+ ################################################## 
+[2025-07-29 14:59:43.000] [Throwable] 
+ Throwable:
+Message: Call to a member function getIdUsuario() on bool
+Code: 0
+File: C:\xampp\htdocs\api\src\controller\PlantaUsuarioControl.php
+Line: 231
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Roteador.php(947): PlantaUsuarioControl->delete(2, 3)
+#1 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('2')
+#2 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(1568): Router->run()
+#5 C:\xampp\htdocs\api.php(4): Roteador->start()
+#6 {main} 
+ ################################################## 
+[2025-07-30 20:17:22.000] [Throwable] 
+ Throwable:
+Message: Object of class stdClass could not be converted to string
+Code: 0
+File: C:\xampp\htdocs\api\src\DAO\TokenDAO.php
+Line: 22
+Trace:
+#0 C:\xampp\htdocs\api\src\DAO\TokenDAO.php(22): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(105): TokenDAO->invalidarToken(Object(stdClass))
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(1164): Router->run()
+#6 C:\xampp\htdocs\api.php(4): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-07-30 20:26:01.000] [Throwable] 
+ Throwable:
+Message: Response::__construct(): Argument #4 ($error) must be of type ?array, int given, called in C:\xampp\htdocs\api\src\routes\Roteador.php on line 103
+Code: 0
+File: C:\xampp\htdocs\api\src\http\Response.php
+Line: 8
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Roteador.php(103): Response->__construct(false, 'Token n\xC3\xA3o forn...', Array, 401)
+#1 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#2 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(1162): Router->run()
+#5 C:\xampp\htdocs\api.php(4): Roteador->start()
+#6 {main} 
+ ################################################## 
+[2025-07-30 20:26:55.000] [Throwable] 
+ Throwable:
+Message: Response::__construct(): Argument #4 ($error) must be of type ?array, int given, called in C:\xampp\htdocs\api\src\routes\Roteador.php on line 103
+Code: 0
+File: C:\xampp\htdocs\api\src\http\Response.php
+Line: 8
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Roteador.php(103): Response->__construct(false, 'Token n\xC3\xA3o forn...', NULL, 401)
+#1 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#2 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(1162): Router->run()
+#5 C:\xampp\htdocs\api.php(4): Roteador->start()
+#6 {main} 
+ ################################################## 
+[2025-07-30 20:26:57.000] [Throwable] 
+ Throwable:
+Message: Response::__construct(): Argument #4 ($error) must be of type ?array, int given, called in C:\xampp\htdocs\api\src\routes\Roteador.php on line 103
+Code: 0
+File: C:\xampp\htdocs\api\src\http\Response.php
+Line: 8
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Roteador.php(103): Response->__construct(false, 'Token n\xC3\xA3o forn...', NULL, 401)
+#1 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#2 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(1162): Router->run()
+#5 C:\xampp\htdocs\api.php(4): Roteador->start()
+#6 {main} 
+ ################################################## 

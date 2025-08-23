@@ -1,0 +1,6 @@
+                        
+                        ID_planta,nome_comum,nome_cientifico,tipo,clima,regiao_origem,luminosidade,frequencia_rega,umidade_min,umidade_max,descricao
+11,Jiboia,"Epipremnum aureum",Trepadeira,Tropical,"Ilhas Salomão","Meia sombra","2x por semana",40.00,70.00,"Planta pendente de fácil cuidado, ideal para ambientes internos."
+12,Lírio-da-paz,"Spathiphyllum wallisii",Erva,Tropical,"América Central",Sombra,"3x por semana",50.00,80.00,"Conhecida por sua flor branca e propriedades purificadoras do ar."
+13,Peperômia,"Peperomia obtusifolia",Erva,Tropical,"América do Sul","Meia sombra",Semanal,30.00,60.00,"Compacta, com folhas suculentas, perfeita para escritórios."
+14,Maranta,"Maranta leuconeura",Erva,Tropical,Brasil,Sombra,"3x por semana",50.00,75.00,"Planta ornamental conhecida por suas folhas com padrões distintos."
