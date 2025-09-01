@@ -14,7 +14,7 @@ use Firebase\JWT\Key;
             private string $iss = 'http://localhost',
             private string $aud = 'http://localhost',
             private string $sub = 'acesso_sistema',
-            private int $duration = 3600 * 24 * 30 // 30 dias
+            private int $duration = 3600 * 24 * 30// 30 dias
         ) { }
         public function gerarToken(stdClass $claims): string {
             $objHeaders = new stdClass();
@@ -48,7 +48,6 @@ use Firebase\JWT\Key;
                 keyId: null,
                 head: (array) $objHeaders
             );
-
             // Salvar token no banco - para isso, precisa receber ou acessar DAO e o IdUsuario
             $tokenDAO = new TokenDAO();
 

@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+}
+
+/* Lado esquerdo */
+.form-container {
+  flex: 0 0 38%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background: #fff;
+}
+
+.logo {
+  position: absolute; /* tira do fluxo normal */
+  top: 60px;          /* distância do topo */
+  left: 80px;         /* distância da esquerda */
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 35px;
+  margin-right: 10px;
+}
+
+.logo h1 {
+  font-size: 1rem;
+  color: #2d3e2f;
+}
+
+.form-container form {
+  width: 100%;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-container input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.form-container button {
+  background: #4a5330;
+  color: #fff;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 25px;
+}
+
+.form-container button:hover {
+  background: #3c4528;
+}
+
+/* Mensagem de erro (vermelho) */
+.alert-danger {
+  color: #ff4d4d;  /* vermelho */
+  font-size: small;
+}
+
+/* Mensagem de sucesso (verde) */
+.alert-success {
+  color: #28a745;  /* verde */
+  font-size: small;
+}
+
+/* Lado direito */
+.image-container {
+  flex: 1;
+  background: url('../arquivos/fundoCadastro.jpg') no-repeat center center/cover;
+}

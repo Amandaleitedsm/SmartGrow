@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartGrow Login</title>
+  <link rel="stylesheet" href="./css/estiloESenha.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="overlay">
+        <p class="title">Verifique seu e-mail</p>
+        <p class="info">Digite o código de verificação enviado para o seu e-mail</p>
+        <form>
+            <input type="text" id="txtCodigo" placeholder="Digite seu código" required> 
+            <button type="button" class="code-button" id="btnVerificar">Verificar código</button>
+        </form>
+    </div>
+
+  <script type="module">
+    import ApiService from './ApiService.js';
+    const api = new ApiService("o token ainda será gerado");
+
+    const txtCodigo = document.getElementById("txtCodigo");
+    const btnVerificar = document.getElementById("btnVerificar");
+
+    // Verificar código
+    btnVerificar.onclick = async function(event) {
+        event.preventDefault();
+        console.log("Botão clicado!");
+        const userData = JSON.parse(localStorage.getItem("userData"));
+        const codigoCorreto = userData.data.code; // supondo que a API devolva o código aqui
+        console.log(codigoCorreto);
+        if (txtCodigo.value.trim() == (String(codigoCorreto))) {
+            window.location.href = "novaSenha.html";
+        } else {
+            alert("Código incorreto!");
+        }
+    };
+
+</script>
+
+</body>
+</html>

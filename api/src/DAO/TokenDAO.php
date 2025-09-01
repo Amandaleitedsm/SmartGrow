@@ -4,7 +4,6 @@ require_once "api/src/utils/Logger.php";
 
 class TokenDAO {
     public function salvarToken($idUsuario, $token, $expiraEm) {
-        
         $query = "INSERT INTO tokens_ativos 
                 (ID_usuario, Token, Expira_em) 
                 VALUES (:id, :token, :expira);";

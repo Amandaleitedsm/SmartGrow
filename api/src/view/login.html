@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartGrow Login</title>
+  <link rel="stylesheet" href="./css/estiloLogin.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="overlay">
+    <div class="login-box">
+      <div class="logo">
+        <img src="./arquivos/logo.png" alt="SmartGrow Logo">
+        <span>SmartGrow</span>
+      </div>
+      <p>Bem-vindo de volta</p>
+      <form>
+        <label for="email">E-mail</label>
+        <input type="email" id="txtEmail" placeholder="Digite seu email" required>
+
+        <label for="senha">Senha</label>
+        <div class="password-wrapper">
+          <input type="password" id="txtSenha" placeholder="Digite sua senha" required>
+          <button type="button" class="toggle-password">
+            <i class="fa-solid fa-eye"></i>
+          </button>
+        </div>
+
+        <a href="esqueceuSenha.html" class="forgot-password">Esqueceu a senha?</a>
+        <button type="submit" class="login-button" id="btnLogin">Entrar</button>
+      </form>
+    </div>
+  </div>
+
+  <script type="module">
+    const toggleBtn = document.querySelector('.toggle-password');
+    const senhaInput = document.getElementById('txtSenha');
+    toggleBtn.addEventListener('click', () => {
+      const isPassword = senhaInput.type === 'password';
+      senhaInput.type = isPassword ? 'text' : 'password';
+      toggleBtn.innerHTML = isPassword
+        ? '<i class="fa-solid fa-eye-slash"></i>'
+        : '<i class="fa-solid fa-eye"></i>';
+    });
+
+    import ApiService from './ApiService.js';
+    const api = new ApiService("o token ainda será gerado");
+
+    const txtEmail = document.getElementById("txtEmail");
+    const txtSenha = document.getElementById("txtSenha");
+    const btnLogin = document.getElementById("btnLogin");
+    const divResposta = document.getElementById("divResposta");
+    
+    btnLogin.onclick = async function (event) {
+      event.preventDefault();
+
+      const dadosLogin = {
+          "usuario": {
+              "Email": txtEmail.value.trim(),
+              "Senha": txtSenha.value.trim()
+          }
+      };
+
+      const respostaAPI = await api.post("/auth/login", dadosLogin);
+      console.log(respostaAPI);
+      if (respostaAPI.success) {
+          localStorage.setItem("userData", JSON.stringify(respostaAPI));
+          window.location.href = "dashboard.html";
+      } else {
+          divResposta.textContent = "Algo deu errado durante o login";
+          divResposta.className = "alert alert-danger";
+      }
+    };
+    
+  </script>
+</body>
+</html>

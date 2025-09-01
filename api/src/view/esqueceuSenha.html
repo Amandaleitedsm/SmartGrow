@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartGrow Login</title>
+  <link rel="stylesheet" href="./css/estiloESenha.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="overlay">
+        <p class="title">Confirme seu e-mail</p>
+        <p class="info">Digite o e-mail cadastrado no site para enviarmos o código de verificação</p>
+        <form>
+            <input type="email" id="txtEmail" placeholder="Digite seu email" required> 
+            <button type="submit" class="code-button" id="btnEnviar">Enviar código</button>
+        </form>
+    </div>
+
+  <script type="module">
+        import ApiService from './ApiService.js';
+        const api = new ApiService("o token ainda será gerado");
+
+        // Inputs e botões
+        const txtEmail = document.getElementById("txtEmail");
+        const btnEnviar = document.getElementById("btnEnviar");
+
+        // Enviar código
+        btnEnviar.onclick = async function (event) {
+            event.preventDefault();
+            const dadosEmail = { "Email": txtEmail.value.trim() };
+            const respostaAPI = await api.post("/auth/send-code", dadosEmail);
+
+            if (respostaAPI.success) {
+                localStorage.setItem("userData", JSON.stringify(respostaAPI));
+                window.location.href = "codigo.html";
+            } else {
+                alert("Erro ao enviar código");
+            }
+        };
+
+        </script>
+
+</body>
+</html>

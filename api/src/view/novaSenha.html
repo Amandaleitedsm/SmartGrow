@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartGrow Login</title>
+  <link rel="stylesheet" href="./css/estiloNSenha.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="overlay">
+        <p class="title">Alterar Senha</p>
+        <p class="info">Digite sua nova senha</p>
+        <form>
+            <input type="password" id="txtNovaSenha" placeholder="Digite sua nova senha" required> 
+            <input type="password" id="txtConfirmarSenha" placeholder="Confirme sua nova senha" required> 
+            <div id="divResposta"></div>
+            <button type="submit" class="code-button" id="btnAlterarSenha">Alterar senha</button>
+        </form>
+    </div>
+
+  <script type="module">
+    import ApiService from './ApiService.js';
+    const api = new ApiService("o token ainda será gerado");
+
+    const txtNovaSenha = document.getElementById("txtNovaSenha");
+    const txtConfirmarSenha = document.getElementById("txtConfirmarSenha");
+    const btnAlterarSenha = document.getElementById("btnAlterarSenha");
+
+
+    btnAlterarSenha.onclick = async function(event) {
+        event.preventDefault();
+        function verificarSenha() {
+            if (txtConfirmarSenha.value.length === 0) {
+                divResposta.textContent = ""; // nada se ainda não digitou
+                divResposta.className = "";
+            } else if (txtNovaSenha.value !== txtConfirmarSenha.value) {
+                divResposta.textContent = "As senhas não coincidem";
+                divResposta.className = "alert alert-danger";
+            } else {
+                divResposta.textContent = "As senhas coincidem!";
+                divResposta.className = "alert alert-success";
+            }
+        }
+        txtConfirmarSenha.addEventListener("input", verificarSenha);
+
+        const userData = JSON.parse(localStorage.getItem("userData"));
+        const email = userData.data.email; // caso precise enviar o email junto
+        console.log(api);
+        console.log(api.putByMail);
+        console.log(email);
+        const dadosAtualizar = {
+                Email: email,
+                Senha: txtNovaSenha.value
+            };
+        const respostaAPI = await api.putByMail("/auth/change-password", dadosAtualizar);
+
+        if (respostaAPI.success) {
+            alert("Senha alterada com sucesso!");
+            window.location.href = "login.html"; // volta para login ou outra página
+        } else {
+            alert("Erro ao alterar senha");
+        }
+    };
+
+</script>
+
+</body>
+</html>

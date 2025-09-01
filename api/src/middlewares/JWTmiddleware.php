@@ -60,10 +60,12 @@ class JWTMiddleware{
 
     public function verificarTokenAtivo(): bool {
         $token = $this->getAuthorizationHeader();
-
+        if ($token !== null && str_starts_with($token, 'Bearer ')) {
+            $token = substr($token, 7); // remove "Bearer "
+        }
         $query = "SELECT 1 
                 FROM tokens_ativos 
-                WHERE Token = :token AND Valido = TRUE AND Expira_em > NOW() 
+                WHERE Token = :token AND Valido = 1 AND Expira_em > NOW() 
                 LIMIT 1";
         
         $statement = Database::getConnection()->prepare($query);

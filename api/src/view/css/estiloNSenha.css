@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+body {
+  background: url('../arquivos/fundoLogin.png') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.overlay {
+  height: 60%;
+  width: 35%;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: #ffffff;
+}
+.login-container {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  max-width: 400px;
+  width: 100%;
+}
+
+.title {
+  font-size: 35px;
+  margin-top: 20px;
+  font-weight: light;
+  color: #000000;
+  text-align: center;
+}
+
+.info {
+  width: 70%;
+  font-size: 12px;
+  margin: 10px auto 30px auto;
+  font-weight: light;
+  color: #000000;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: solid 0.5px rgba(0, 0, 0, 0.363);
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  font-size: 14px;
+  height: 60px;
+}
+
+input::placeholder {
+  color: #000000;
+  opacity: 1; /* garante que apareça bem */
+}
+
+.code-button {
+  margin-top: 15px;
+  background-color: #484f2e;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.code-button:hover {
+  background-color: #363b22;
+}
+
+/* esconde todas as seções */
+section {
+  display: none;
+}
+
+/* mostra só a seção ativa */
+section.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* ocupa a tela inteira */
+}
+
+#section-send, #section-code, #section-reset {
+  width: 100%;
+  height: 100vh;
+}

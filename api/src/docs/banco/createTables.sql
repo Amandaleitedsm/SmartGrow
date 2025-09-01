@@ -78,3 +78,11 @@ CREATE TABLE tokens_ativos (
     FOREIGN KEY (ID_usuario) REFERENCES cadastro_usuario(ID_usuario)
         ON DELETE CASCADE
 );
+
+CREATE TABLE codigos_verificacao (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    email VARCHAR(255) NOT NULL,
+    codigo VARCHAR(10) NOT NULL,
+    data_criacao DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    expira_em DATETIME NOT NULL
+);

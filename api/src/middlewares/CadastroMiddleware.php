@@ -55,7 +55,7 @@ require_once 'api/src/DAO/CadastroDAO.php';
                     ))->send();
                     exit();
                 }
-            } else if ($_SERVER['REQUEST_METHOD'] === 'PUT') {
+            } else if ($_SERVER['REQUEST_METHOD'] === 'PUT' && $_SERVER['REQUEST_URI'] === '/usuarios/(\d+)') {
                 $temCamposAtualizaveis = isset($stdCadastro->usuario->Nome) ||
                              isset($stdCadastro->usuario->Email) ||
                              isset($stdCadastro->usuario->Senha) ||
@@ -74,6 +74,31 @@ require_once 'api/src/DAO/CadastroDAO.php';
                     ))->send();
                     exit();
                 } 
+            } else if ($_SERVER['REQUEST_METHOD'] === 'PUT' && $_SERVER['REQUEST_URI'] === '/auth/change-password') {
+                if (!isset($stdCadastro->Email)){
+                    (new Response(
+                        success: false,
+                        message: "Usuário inválido",
+                        error:[
+                            "code" => 'validation_error',
+                            "message" => 'Não foi enviado o email do usuário.'
+                        ],
+                        httpCode: 400
+                    ))->send();
+                    exit();
+                }
+                else if (!isset($stdCadastro->Senha)){
+                    (new Response(
+                        success: false,
+                        message: "Usuário inválido",
+                        error:[
+                            "code" => 'validation_error',
+                            "message" => 'Não foi enviada a nova senha do usuário.'
+                        ],
+                        httpCode: 400
+                    ))->send();
+                    exit();
+                }
             }
 
             return $stdCadastro;

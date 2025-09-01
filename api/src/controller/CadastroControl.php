@@ -78,7 +78,48 @@ require_once 'api/src/http/Response.php';
         }
 
 
-        public function store(stdClass $stdCadastro): never
+        public function changePassword(stdClass $stdCadastro): never
+        {
+            $cadastroDAO = new CadastroDAO();
+            $atual = $cadastroDAO->readByEmail($stdCadastro->Email);
+            if ($atual === null) {
+                (new Response(
+                    success: false,
+                    message: 'Cadastro não encontrado.',
+                    httpCode: 404
+                ))->send();
+                exit();
+            }
+            $cadastro = new CadastroUsuario();
+            $cadastro
+                ->setEmail($stdCadastro->Email)
+                ->setSenha(isset($stdCadastro->usuario->Senha))
+                ->setSenhaHash(password_hash($stdCadastro->Senha, PASSWORD_DEFAULT));
+
+            $atualizado = $cadastroDAO->updateByEmail($cadastro);
+            if ($atualizado !== false) {
+                (new Response(
+                    success: true,
+                    message: 'Cadastro atualizado com sucesso.',
+                    data: ['Cadastro' => $atualizado],
+                    httpCode: 200
+                ))->send();
+            } else {
+                (new Response(
+                    success: false,
+                    message: 'Cadastro não atualizado.',
+                    error: [
+                        "code" => 'update_error',
+                        "message" => 'Não foi possível atualizar o Cadastro.'
+                    ],
+                    httpCode: 400
+                ))->send();
+            }
+            exit();
+        }
+
+
+        public function store(stdClass $stdCadastro)
         {
             $cadastro = new CadastroUsuario();
             $cadastro
@@ -103,7 +144,7 @@ require_once 'api/src/http/Response.php';
                 data: ['cadastro' => $nomeCadastro],
                 httpCode: 200
             ))->send();
-            exit();  
+            return $nomeCadastro;
         }
 
         public function delete(int $idCadastro): never

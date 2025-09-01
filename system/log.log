@@ -3218,3 +3218,254 @@ Trace:
 #5 C:\xampp\htdocs\api.php(4): Roteador->start()
 #6 {main} 
  ################################################## 
+[2025-08-31 13:55:54.000] [Throwable] 
+ Throwable:
+Message: Call to a member function verificarTokenAtivo() on null
+Code: 0
+File: C:\xampp\htdocs\api\src\routes\Roteador.php
+Line: 216
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}('15')
+#1 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#2 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#3 C:\xampp\htdocs\api\src\routes\Roteador.php(1178): Router->run()
+#4 C:\xampp\htdocs\apirq.php(4): Roteador->start()
+#5 {main} 
+ ################################################## 
+[2025-08-31 16:23:28.000] [Throwable] 
+ Throwable:
+Message: Call to undefined method PDOStatement::bind_param()
+Code: 0
+File: C:\xampp\htdocs\api\src\models\EmailService.php
+Line: 9
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\UserController.php(26): AuthModel->saveCode('jlzmand@gmail.c...', 506534)
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(117): AuthController->sendCode()
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(1190): Router->run()
+#6 C:\xampp\htdocs\apirq.php(4): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-08-31 16:24:10.000] [Throwable] 
+ Throwable:
+Message: Call to undefined method PDOStatement::bind_param()
+Code: 0
+File: C:\xampp\htdocs\api\src\models\EmailService.php
+Line: 9
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\UserController.php(26): AuthModel->saveCode('jlzmand@gmail.c...', 561344)
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(117): AuthController->sendCode()
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(1190): Router->run()
+#6 C:\xampp\htdocs\apirq.php(4): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-08-31 16:24:30.000] [Throwable] 
+ Throwable:
+Message: Call to undefined method PDOStatement::bind_param()
+Code: 0
+File: C:\xampp\htdocs\api\src\models\EmailService.php
+Line: 9
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\UserController.php(26): AuthModel->saveCode('jlzmand@gmail.c...', 997170)
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(117): AuthController->sendCode()
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(1190): Router->run()
+#6 C:\xampp\htdocs\apirq.php(4): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-08-31 16:24:55.000] [Throwable] 
+ Throwable:
+Message: Call to undefined method PDOStatement::bind_param()
+Code: 0
+File: C:\xampp\htdocs\api\src\models\EmailService.php
+Line: 9
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\UserController.php(26): AuthModel->saveCode('jlzmand@gmail.c...', 869368)
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(117): AuthController->sendCode()
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(1190): Router->run()
+#6 C:\xampp\htdocs\apirq.php(4): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-08-31 16:26:41.000] [Throwable] 
+ Throwable:
+Message: Call to a member function prepare() on null
+Code: 0
+File: C:\xampp\htdocs\api\src\models\EmailService.php
+Line: 7
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\UserController.php(26): AuthModel->saveCode('jlzmand@gmail.c...', 439153)
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(117): AuthController->sendCode()
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(1190): Router->run()
+#6 C:\xampp\htdocs\apirq.php(4): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-08-31 16:38:10.000] [Throwable] 
+ Throwable:
+Message: Too few arguments to function AuthController::__construct(), 0 passed in C:\xampp\htdocs\api\src\routes\Roteador.php on line 117 and exactly 1 expected
+Code: 0
+File: C:\xampp\htdocs\api\src\controller\UserController.php
+Line: 12
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Roteador.php(117): AuthController->__construct()
+#1 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#2 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(1190): Router->run()
+#5 C:\xampp\htdocs\apirq.php(4): Roteador->start()
+#6 {main} 
+ ################################################## 
+[2025-08-31 16:38:16.000] [Throwable] 
+ Throwable:
+Message: Too few arguments to function AuthController::__construct(), 0 passed in C:\xampp\htdocs\api\src\routes\Roteador.php on line 117 and exactly 1 expected
+Code: 0
+File: C:\xampp\htdocs\api\src\controller\UserController.php
+Line: 12
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Roteador.php(117): AuthController->__construct()
+#1 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#2 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(1190): Router->run()
+#5 C:\xampp\htdocs\apirq.php(4): Roteador->start()
+#6 {main} 
+ ################################################## 
+[2025-08-31 16:40:42.000] [Throwable] 
+ Throwable:
+Message: Too few arguments to function AuthController::__construct(), 0 passed in C:\xampp\htdocs\api\src\routes\Roteador.php on line 117 and exactly 1 expected
+Code: 0
+File: C:\xampp\htdocs\api\src\controller\UserController.php
+Line: 12
+Trace:
+#0 C:\xampp\htdocs\api\src\routes\Roteador.php(117): AuthController->__construct()
+#1 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#2 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#3 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#4 C:\xampp\htdocs\api\src\routes\Roteador.php(1190): Router->run()
+#5 C:\xampp\htdocs\apirq.php(4): Roteador->start()
+#6 {main} 
+ ################################################## 
+[2025-08-31 16:53:46.000] [Throwable] 
+ Throwable:
+Message: Class "PHPMailer\PHPMailer\PHPMailer" not found
+Code: 0
+File: C:\xampp\htdocs\api\src\models\AuthModel.php
+Line: 30
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\UserController.php(10): AuthModel->sendCode('jlzmand@gmail.c...')
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(117): AuthController->sendCode()
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(1190): Router->run()
+#6 C:\xampp\htdocs\apirq.php(4): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-08-31 16:57:52.000] [Throwable] 
+ Throwable:
+Message: AuthModel::sendCode(): Argument #1 ($email) must be of type string, null given, called in C:\xampp\htdocs\api\src\controller\UserController.php on line 10
+Code: 0
+File: C:\xampp\htdocs\api\src\models\AuthModel.php
+Line: 15
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\UserController.php(10): AuthModel->sendCode(NULL)
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(119): AuthController->sendCode()
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(1192): Router->run()
+#6 C:\xampp\htdocs\apirq.php(4): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-08-31 16:58:44.000] [Throwable] 
+ Throwable:
+Message: Class "PHPMailer\PHPMailer\PHPMailer" not found
+Code: 0
+File: C:\xampp\htdocs\api\src\models\AuthModel.php
+Line: 30
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\UserController.php(10): AuthModel->sendCode('jlzmand@gmail.c...')
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(119): AuthController->sendCode()
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(1192): Router->run()
+#6 C:\xampp\htdocs\apirq.php(4): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-08-31 16:58:52.000] [Throwable] 
+ Throwable:
+Message: Class "PHPMailer\PHPMailer\PHPMailer" not found
+Code: 0
+File: C:\xampp\htdocs\api\src\models\AuthModel.php
+Line: 30
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\UserController.php(10): AuthModel->sendCode('jlzmand@gmail.c...')
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(119): AuthController->sendCode()
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(1192): Router->run()
+#6 C:\xampp\htdocs\apirq.php(4): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-08-31 19:52:34.000] [Throwable] 
+ Throwable:
+Message: Response::__construct(): Argument #3 ($data) must be of type ?array, int given, called in C:\xampp\htdocs\api\src\controller\UserController.php on line 12
+Code: 0
+File: C:\xampp\htdocs\api\src\http\Response.php
+Line: 8
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\UserController.php(12): Response->__construct(true, 'C\xC3\xB3digo enviado...', 823776, NULL, 200)
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(119): AuthController->sendCode()
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(1207): Router->run()
+#6 C:\xampp\htdocs\apirq.php(4): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-08-31 19:53:23.000] [Throwable] 
+ Throwable:
+Message: Response::__construct(): Argument #3 ($data) must be of type ?array, int given, called in C:\xampp\htdocs\api\src\controller\UserController.php on line 12
+Code: 0
+File: C:\xampp\htdocs\api\src\http\Response.php
+Line: 8
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\UserController.php(12): Response->__construct(true, 'C\xC3\xB3digo enviado...', 301812, NULL, 200)
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(119): AuthController->sendCode()
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(1207): Router->run()
+#6 C:\xampp\htdocs\apirq.php(4): Roteador->start()
+#7 {main} 
+ ################################################## 
+[2025-08-31 20:43:34.000] [Throwable] 
+ Throwable:
+Message: CadastroDAO::readById(): Argument #1 ($usuarioID) must be of type int, null given, called in C:\xampp\htdocs\api\src\controller\CadastroControl.php on line 45
+Code: 0
+File: C:\xampp\htdocs\api\src\DAO\CadastroDAO.php
+Line: 27
+Trace:
+#0 C:\xampp\htdocs\api\src\controller\CadastroControl.php(45): CadastroDAO->readById(NULL)
+#1 C:\xampp\htdocs\api\src\routes\Roteador.php(134): CadastroControl->edit(Object(stdClass))
+#2 C:\xampp\htdocs\api\src\routes\Router.php(458): Roteador->{closure}()
+#3 C:\xampp\htdocs\api\src\routes\Router.php(440): Router->invoke(Object(Closure), Array)
+#4 C:\xampp\htdocs\api\src\routes\Router.php(287): Router->handle(Array, true)
+#5 C:\xampp\htdocs\api\src\routes\Roteador.php(1207): Router->run()
+#6 C:\xampp\htdocs\apirq.php(4): Roteador->start()
+#7 {main} 
+ ################################################## 

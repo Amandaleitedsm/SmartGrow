@@ -58,6 +58,42 @@ require_once "api/src/utils/Logger.php";
                 ->setAtivo($linha->ativo);
         }
 
+
+        public function readByEmail(string $email): CadastroUsuario|null
+        {
+            $query = 'SELECT 
+                        ID_usuario,
+                        Nome,
+                        Email,
+                        Senha_hash,
+                        RoleUsuario,
+                        Data_criacao,
+                        Data_atualizacao,
+                        ativo
+                    FROM cadastro_usuario
+                    WHERE Email = :email;';
+
+            $statement = Database::getConnection()->prepare(query: $query);
+            $statement->execute([':email' => $email]);
+
+            $linha = $statement->fetch(PDO::FETCH_OBJ);
+
+            if (!$linha) {
+                return null;
+            }
+
+            return (new CadastroUsuario())
+                ->setId((int)$linha->ID_usuario)
+                ->setNome($linha->Nome)
+                ->setEmail($linha->Email)
+                ->setSenhaHash($linha->Senha_hash)
+                ->setRoleUsuario($linha->RoleUsuario)
+                ->setDataCadastro(new DateTime($linha->Data_criacao))
+                ->setDataAtualizacao(new DateTime($linha->Data_atualizacao))
+                ->setAtivo($linha->ativo);
+        }
+
+
         public function readByName(string $name): array {
             $query = 'SELECT * 
                 FROM analise_planta 
@@ -144,6 +180,28 @@ require_once "api/src/utils/Logger.php";
                 ':roleUsuario' => $usuario->getRoleUsuario(),
                 ':dataAtualizacao' => $usuario->getDataAtualizacao()->format('Y-m-d H:i:s'),
                 ':ativo' => $usuario->getAtivo()
+            ]);
+
+            if (!$success) {
+                return false;
+            }
+
+            return $usuario;
+        }
+
+
+        public function updateByEmail(CadastroUsuario $usuario): CadastroUsuario|false {
+            $agora = new DateTime();
+            $usuario->setDataAtualizacao($agora);
+
+            $query = 'UPDATE cadastro_usuario SET 
+                        Senha_hash = :senhaHash
+                    WHERE Email = :email;';
+
+            $statement = Database::getConnection()->prepare(query: $query);
+            $success = $statement->execute([
+                ':email' => $usuario->getEmail(),
+                ':senhaHash' => $usuario->getSenhaHash()
             ]);
 
             if (!$success) {

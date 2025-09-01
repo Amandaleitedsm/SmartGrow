@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartGrow - Cadastro</title>
+  <link rel="stylesheet" href="./css/estiloCadastro.css">
+</head>
+<body>
+  <!-- Coluna do formulário -->
+  <div class="form-container">
+    <div class="logo">
+      <img src="./arquivos/logo.png" alt="Logo">
+      <h1>SmartGrow</h1>
+    </div>
+    <form>
+      <input type="text" id="txtNome" placeholder="Nome completo" required>
+      <input type="email" id="txtEmail" placeholder="E-mail" required>
+      <input type="password" id="txtSenha" placeholder="Senha" required>
+      <input type="password" id="txtConfirmarSenha" placeholder="Confirme a senha" required>
+      <div id="divResposta"></div>
+      <button type="submit" id="Cadastrar">Cadastrar</button>
+    </form>
+  </div>
+
+  <!-- Coluna da imagem -->
+  <div class="image-container"></div>
+  <script type="module">
+    import ApiService from './ApiService.js';
+    const api = new ApiService("o token ainda será gerado");
+
+    const txtEmail = document.getElementById("txtEmail");
+    const txtNome = document.getElementById("txtNome");
+    const txtSenha = document.getElementById("txtSenha");
+    const txtConfirmarSenha = document.getElementById("txtConfirmarSenha");
+    const btnCadastrar = document.getElementById("Cadastrar");
+    const divResposta = document.getElementById("divResposta");
+
+    function verificarSenha() {
+
+        if (txtConfirmarSenha.value.length === 0) {
+            divResposta.textContent = ""; // nada se ainda não digitou
+            divResposta.className = "";
+        } else if (txtSenha.value !== txtConfirmarSenha.value) {
+            divResposta.textContent = "As senhas não coincidem";
+            divResposta.className = "alert alert-danger";
+        } else {
+            divResposta.textContent = "As senhas coincidem!";
+            divResposta.className = "alert alert-success";
+        }
+    }
+
+    // Verifica sempre que o usuário digitar no campo de confirmar senha
+    txtConfirmarSenha.addEventListener("input", verificarSenha);
+    
+    btnCadastrar.onclick = async function (event) {
+      event.preventDefault();
+
+      const dadosCadastro = {
+          "usuario": {
+              "Nome": txtNome.value.trim(),
+              "Email": txtEmail.value.trim(),
+              "Senha": txtSenha.value.trim(),
+              "RoleUsuario": "usuario"
+          }
+      };
+
+      const respostaAPI = await api.post("/auth/register", dadosCadastro);
+      if (respostaAPI.success) {
+          localStorage.setItem("userData", JSON.stringify(respostaAPI));
+          window.location.href = "login.html";
+      } else {
+          divResposta.textContent = "Algo deu errado durante o cadastro";
+          divResposta.className = "alert alert-danger";
+      }
+    };
+    
+  </script>
+</body>
+</html>

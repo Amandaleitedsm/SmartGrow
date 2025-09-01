@@ -1,7 +1,9 @@
 <?php
+
 require_once "api/src/routes/Router.php";
 require_once "api/src/utils/Logger.php";
 require_once "api/src/http/Response.php";
+require_once 'api/vendor/autoload.php';
 
 require_once "api/src/DAO/CadastroDAO.php";
 require_once "api/src/DAO/TokenDAO.php";
@@ -14,6 +16,7 @@ require_once "api/src/controller/PlantaUsuarioControl.php";
 require_once "api/src/controller/RecomendacoesControl.php";
 require_once "api/src/controller/AnaliseRecControl.php";
 require_once "api/src/controller/CondicoesControl.php";
+require_once "api/src/controller/UserController.php";
 
 require_once "api/src/middlewares/analisePlantaMiddleware.php";
 require_once "api/src/middlewares/PlantaMiddleware.php";
@@ -71,6 +74,7 @@ require_once "api/src/middlewares/CondicoesMiddleware.php";
                         ->isValidSenha($objStd->usuario->Senha);
 
                     (new CadastroControl())->store(stdCadastro: $objStd);
+                    
                 }
                 catch (Throwable $exception) {
                     $this->handleError($exception, "Error during registration");
@@ -87,9 +91,8 @@ require_once "api/src/middlewares/CondicoesMiddleware.php";
                         ->isValidEmail($stdLogin->usuario->Email)
                         ->isValidSenha($stdLogin->usuario->Senha);
 
-                    (new LoginControl())->autenticar($stdLogin);
-                    (new CadastroControl())->isActive((int)$id);
-
+                    $token = (new LoginControl())->autenticar($stdLogin);
+                    (new CadastroControl())->IsActive((int)$id);
                 }
                 catch (Throwable $exception) {
                     $this->handleError($exception, "Error during login");
@@ -106,6 +109,31 @@ require_once "api/src/middlewares/CondicoesMiddleware.php";
                 }
                 catch (Throwable $exception) {
                     $this->handleError($exception, "Error during logout");
+                }
+                exit();
+            });
+            
+            $this->router->post('/auth/send-code', function() {
+                try {
+                    // Chama o controller
+                    (new AuthController())->sendCode();
+                } catch (Throwable $exception) {
+                    $this->handleError($exception, "Erro ao enviar código");
+                }
+                exit();
+            });
+
+            $this->router->put('/auth/change-password', function() {
+                try {
+                    $requestBody = file_get_contents('php://input');
+                    $cadastroMiddleware = new CadastroMiddleware();
+                    $stdCadastro = $cadastroMiddleware->stringJsonToStdClass($requestBody);
+                    $cadastroMiddleware->isValidEmail($stdCadastro->Email);
+                    $cadastroMiddleware->isValidSenha($stdCadastro->Senha); 
+                    
+                    (new CadastroControl())->changePassword($stdCadastro);
+                } catch (Throwable $exception) {
+                    $this->handleError($exception, "Erro ao enviar código");
                 }
                 exit();
             });
@@ -212,8 +240,9 @@ require_once "api/src/middlewares/CondicoesMiddleware.php";
             });
             $this->router->delete('/usuarios/(\d+)', function($id) {
                 try{
-                    $claims = (new JWTMiddleware())->isValidToken();
-                    if ($tokenMiddleware->verificarTokenAtivo()) {
+                    $jwtMiddleware = new JWTMiddleware();
+                    $claims = $jwtMiddleware->isValidToken();
+                    if ($jwtMiddleware->verificarTokenAtivo()) {
                         if ($claims->private->IdUsuario == (int)$id) {
                             (new CadastroMiddleware())->isValidID((int)$id);
 
