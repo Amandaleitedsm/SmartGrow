@@ -33,7 +33,8 @@ Promover o cuidado personalizado das plantas por meio da tecnologia 🌍, evitan
 ## Observações
 
 Para detalhes da API, veja `/api/README.md`.
-
+Link para o modelo Canva [(https://www.canva.com/design/DAGq1n7diPQ/juuQqT0wUVj2gSN0dDe84A/view?utm_content=DAGq1n7diPQ&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2868e7c99f)
+]
 ---
 
 ## 👩‍💻 Autora
