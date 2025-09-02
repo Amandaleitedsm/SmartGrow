@@ -41,7 +41,13 @@ class AuthModel {
             $mail->setFrom('lu39cemachado@yahoo.com.br', 'SmartGrow');
             $mail->addAddress($email);
             $mail->Subject = 'Seu código de verificação';
-            $mail->Body = "Seu código é: $codigo";
+            $mail->Body = "<h1> Bem vindo de volta ao SmartGrow</h1><br>
+            <p> Como você esqueceu sua senha, estamos te enviando um código para que possa criar uma nova senha. 
+            Digite-a no campos disponível no site. </p><br>
+            <h3>CÓDIGO DE VERIFICAÇÃO: </h3><br><br><h1>$codigo</h1>";
+
+            $mail->CharSet = "UTF-8";   // força UTF-8 nos headers
+            $mail->isHTML(true);        // garante suporte a acentuação e formatação
 
             $mail->SMTPDebug = 3; // ou 3 para ainda mais detalhado
             $mail->SMTPDebug = 0;
