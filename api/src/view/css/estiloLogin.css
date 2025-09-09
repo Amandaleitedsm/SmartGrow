@@ -55,8 +55,21 @@ form {
 label {
   margin-bottom: 5px;
   font-weight: 500;
+  color: #ffffff;
 }
 
+#divResposta {
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: lighter;
+  color: rgb(253, 94, 94);
+}
+.register-link {
+  font-size: 14px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
 input {
   padding: 10px;
   margin-bottom: 15px;

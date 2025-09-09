@@ -1,0 +1,101 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+div h1 {
+  margin: 0;
+  margin-bottom: 4px;
+  line-height: 1.2;
+}
+
+h3 {
+    margin-top: 40px;
+    font-size: 23px;
+    margin-bottom: 30px;
+}
+
+h4 {
+    font-size: larger;
+}
+p {
+    font-size: larger;
+}
+
+/* CONTENT */
+.content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.boxDireita {
+    height: auto;
+    width: 420px;
+    border-color: #5e660f;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 36px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.boxEsquerda {
+    height: auto;
+    width: 500px;
+    border-color: #5e660f;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 36px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+/* HOME */
+.home {
+    margin-left: 300px; /* compensa largura fixa do menu */
+    height: 100vh;
+}
+
+.home .ajustes {
+    padding-top: 50px;          /* distância do topo */
+    margin-right: 50px;  
+    margin-left: 50px;   
+}
+
+.home .header {    /* distância da esquerda */
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.home .title {
+    justify-content: left;
+    font-size: 34px;
+}
+
+.home .header img { 
+    width: 35px;
+    border-radius: 50%;
+    justify-content: right;
+}
+
+/* GERAL */
+section {
+    scroll-margin-top: 100px;
+}

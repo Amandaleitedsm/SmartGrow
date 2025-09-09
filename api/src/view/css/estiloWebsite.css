@@ -116,12 +116,11 @@ div p{
 /* HOME */
 .home {
     margin-top: 77px; /* para não ficar atrás do menu fixo */
-    width: 1350px; /* ou o tamanho que quiser */
+    width: 50%;
     height: 504px; /* defina uma altura fixa para a div */
-    background-image: url('../arquivos/fundoHome.png');
-    background-size:cover;  
-    background-repeat: no-repeat;
-    background-position: center center;
+    background-image: url('../arquivos/fundoHome.png') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
     background-color: #f6f6f6; /* opcional, cor de fundo se a imagem tiver espaço */
     box-shadow: 0 4px 10px rgba(0,0,0,0.8);
 }
