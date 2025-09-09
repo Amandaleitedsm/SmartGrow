@@ -20,7 +20,12 @@
             <button type="button" id="buttonAdd" class="ButtonAdd"> 
                 <i class="fa-solid fa-plus"></i> Gerar relatório
             </button>
-            <div class="content" id="contentPlantas"></div>
+            <div class="content" id="contentPlantas">
+                <div id="semRelatorios" class="sem-relatorios" style="display: none;">
+                <span>:(</span><br>
+                <span>Não há relatórios para serem exibidos</span>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -31,6 +36,8 @@
             <div id="modalBody"></div>
         </div>
     </div>
+
+    
 
     <script type="module">
         import ApiService from './ApiService.js';
@@ -49,6 +56,18 @@
         }
 
         const api = new ApiService(token);
+
+        // Simulação de resposta quando não houverem relatórios
+        // Deve estar após a chamada da rota o if else abaixo
+        // Deve haver lógica para carregar os relatórios quando existirem, provavelmente por função, tipo o listAll()
+
+        const relatorios = []; // Simula resposta vazia para teste sem relatórios
+        if (relatorios.length === 0) {
+            document.getElementById("semRelatorios").style.display = "flex";
+        } else {
+            document.getElementById("semRelatorios").style.display = "none";
+            // código que monta os relatórios normalmente
+        }
 
         document.getElementById("buttonAdd").onclick = async () => {
             try {
@@ -129,6 +148,7 @@
 
                     console.log("Dados do relatório:", obj);
                     // await api.post("/relatorios", obj);
+                    
 
                     alert("Relatório gerado com sucesso!");
                     document.getElementById("plantModal").style.display = "none";
