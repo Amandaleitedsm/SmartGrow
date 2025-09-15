@@ -50,7 +50,8 @@ CREATE TABLE analise_planta (
     foreign key (ID_planta_usuario) references planta_usuario(ID) on delete cascade,
     data_analise  datetime default current_timestamp not null,
     status_saude ENUM('Boa', 'Regular', 'Ruim', 'Doente'),
-    status_umidade ENUM('Baixa', 'Alta', 'Regular')
+    status_umidade ENUM('Baixa', 'Alta', 'Regular'),
+    imagem VARCHAR(255)
 );
 
 CREATE TABLE recomendacoes (
@@ -60,9 +61,9 @@ CREATE TABLE recomendacoes (
 );
 
 CREATE TABLE analiseXrecomendacao (
+	IDAssoc INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
     ID_analise INT NOT NULL,
     ID_recomendacao INT NOT NULL,
-    PRIMARY KEY (ID_analise, ID_recomendacao) ,
     FOREIGN KEY (ID_analise) REFERENCES analise_planta(ID) ON DELETE CASCADE ,
     FOREIGN KEY (ID_recomendacao) REFERENCES recomendacoes(ID) ON DELETE CASCADE
 );
@@ -86,3 +87,4 @@ CREATE TABLE codigos_verificacao (
     data_criacao DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
     expira_em DATETIME NOT NULL
 );
+select * from cadastro_usuario;

@@ -195,3 +195,20 @@ p {
     gap: 10px;
     box-sizing: border-box;
 }
+.sem-plantas {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* mantém centralizado horizontalmente */
+    height: 60vh; 
+    justify-content:center;
+    font-size: 36px;
+    color: #555;
+    opacity: 0.7;
+    text-align: center;
+    padding-bottom: 35px;
+}
+
+.sem-plantas span {
+    display: block;
+    line-height: 0; /* deixa os spans bem colados */
+}

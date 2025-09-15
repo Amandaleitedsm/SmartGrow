@@ -20,7 +20,7 @@ require_once 'api/src/http/Response.php';
         }
         public function showByUser(int $idUsuario): never{
             $analisePlantaDAO = new AnalisePlantaDAO();
-            $resposta = $analisePlantaDAO->readByIdUsuario(idUsuario);
+            $resposta = $analisePlantaDAO->readByIdUsuario($idUsuario);
 
             (new Response(
                 success: true,
@@ -150,7 +150,7 @@ require_once 'api/src/http/Response.php';
                 ))->send();
                 exit();
             } else {
-                $nomeAnalise = $analisePlantaDAO->create($analise, stdAnalise->analise->IdUsuario);
+                $nomeAnalise = $analisePlantaDAO->create($analise, $stdAnalise->analise->IdUsuario);
                 if ($nomeAnalise === false) {
                     (new Response(
                         success: false,

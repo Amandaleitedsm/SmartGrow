@@ -28,7 +28,8 @@ require_once "api/src/utils/Logger.php";
                         ID_planta_usuario,
                         data_analise,
                         status_saude,
-                        status_umidade
+                        status_umidade,
+                        imagem
                     FROM analise_planta
                     WHERE ID = :analiseID;';
             
@@ -46,7 +47,8 @@ require_once "api/src/utils/Logger.php";
                 ->setIdPlantaUsuario((int)$linha->ID_planta_usuario)
                 ->setDataAnalise($linha->data_analise)
                 ->setStatusSaude($linha->status_saude)
-                ->setStatusUmidade($linha->status_umidade);
+                ->setStatusUmidade($linha->status_umidade)
+                ->setImagem($linha->imagem);
         }
 
 
@@ -69,7 +71,7 @@ require_once "api/src/utils/Logger.php";
             $query = 'SELECT * 
                 FROM analise_planta 
                 WHERE ID_planta_usuario IN (SELECT ID FROM planta_usuario WHERE IdUsuario = :idUsuario)
-                ORDER BY data_analise asc;';
+                ORDER BY data_analise DESC;';
 
             $statement =  Database::getConnection()->prepare(query: $query); // impedir sql injection
             $statement->execute([':idUsuario' => (int)$idUsuario]);

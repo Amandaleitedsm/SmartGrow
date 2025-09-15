@@ -57,20 +57,14 @@ require_once 'api/src/http/Response.php';
             $plantaUsuarioDAO = new PlantaUsuarioDAO();
             $resposta = $plantaUsuarioDAO->readByIdUsuario(idUsuario: $idUsuario);
 
-            if ($resposta === null) {
-                (new Response(
-                    success: false,
-                    message: 'Plantas não encontradas.',
-                    httpCode: 404
-                ))->send();
-            } else {
+            
                 (new Response(
                     success: true,
                     message: 'Plantas selecionadas com sucesso.',
                     data: ['plantas' => $resposta],
                     httpCode: 200
                 ))->send();
-            }
+            
             
             exit();
         }

@@ -18,7 +18,7 @@ require_once 'api/src/DAO/AnaliseRecDAO.php';
                 ))->send();
                 exit();
             }
-            else if (!isset($stdAnaliseR->Dados->IdAnalise)){
+            else if (!isset($stdAnalise->Dados->IdAnalise)){
                 (new Response(
                     success: false,
                     message: "Análise-recomendacao inválida",
@@ -30,7 +30,7 @@ require_once 'api/src/DAO/AnaliseRecDAO.php';
                 ))->send();
                 exit();
             }
-            else if (!isset($stdAnaliseR->Dados->IdRecomendacao)){
+            else if (!isset($stdAnalise->Dados->IdRecomendacao)){
                 (new Response(
                     success: false,
                     message: "Análise inválida",
@@ -43,10 +43,10 @@ require_once 'api/src/DAO/AnaliseRecDAO.php';
                 exit();
             }   
 
-            return $stdAnaliseR;
+            return $stdAnalise;
         }
 
-        public function isValidIdAnalise(string $idAnalise): self
+        public function isValidIdAnalise(int $idAnalise): self
         {
             if (!is_numeric($idAnalise)) {
                 http_response_code(400);

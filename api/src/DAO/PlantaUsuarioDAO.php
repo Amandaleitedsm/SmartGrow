@@ -49,7 +49,7 @@ require_once "api/src/utils/Logger.php";
                 ->setLocalizacao($linha->localizacao);
         }
 
-        public function readByIdUsuario(int $idUsuario): PlantaUsuario|null {
+        public function readByIdUsuario(int $idUsuario): Array|null {
             $query = 'SELECT * 
                 FROM planta_usuario
                 WHERE IdUsuario = :idUsuario
@@ -57,18 +57,13 @@ require_once "api/src/utils/Logger.php";
 
             $statement =  Database::getConnection()->prepare(query: $query); // impedir sql injection
             $statement->execute([':idUsuario' => $idUsuario]);
-            $linha = $statement->fetch(PDO::FETCH_OBJ);
+            $linha = $statement->fetchAll(PDO::FETCH_ASSOC);
 
             if (!$linha) {
                 return null;
             }
 
-            return (new PlantaUsuario())
-                ->setId((int)$linha->ID)
-                ->setIdUsuario((int)$linha->IdUsuario)
-                ->setIdPlanta((int)$linha->IdPlanta)
-                ->setApelido($linha->apelido)
-                ->setLocalizacao($linha->localizacao);
+            return $linha;
         }
 
         public function readByIdPlanta(int $idPlanta, int $idUsuario): PlantaUsuario|null {

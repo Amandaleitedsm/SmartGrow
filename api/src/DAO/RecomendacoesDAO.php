@@ -17,18 +17,37 @@ require_once "api/src/utils/Logger.php";
             return $resultados;
         }
 
-        public function readByID($idRecomendacao){
-            $query = 'SELECT *
-                FROM recomendacoes 
-                WHERE ID = :idRecomendacao;';
+       public function readByID($idsRecomendacao) {
+    if (!is_array($idsRecomendacao)) {
+        $idsRecomendacao = [$idsRecomendacao]; // garante array
+    }
 
-            $statement = Database::getConnection()->prepare(query: $query); // impedir sql injection
-            $statement->execute([':idRecomendacao' => $idRecomendacao]);
+    if (empty($idsRecomendacao)) {
+        return [];
+    }
 
-            $resultado = $statement->fetchAll(mode: PDO::FETCH_ASSOC);
+    $placeholders = [];
+    $params = [];
 
-            return $resultado;
-        }
+    // cria placeholders :id0, :id1, :id2...
+    foreach ($idsRecomendacao as $index => $id) {
+        $placeholder = ":id$index";
+        $placeholders[] = $placeholder;
+        $params[$placeholder] = $id;
+    }
+
+    $in = implode(',', $placeholders);
+    $query = "SELECT * FROM recomendacoes WHERE ID IN ($in)";
+
+    $stmt = Database::getConnection()->prepare($query);
+    $stmt->execute($params);
+
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
+}
+
+
+
+
 
         public function readByTitulo($titulo){
             $query = 'SELECT *

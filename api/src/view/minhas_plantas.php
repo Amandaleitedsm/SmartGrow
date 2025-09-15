@@ -23,6 +23,10 @@
                 <i class="fa-solid fa-plus"></i> Adicionar Planta
             </button>
             <div class="content" id="contentPlantas"></div>
+            <div id="semPlantas" class="sem-plantas" style="display: none;">
+                <span>:(</span><br>
+                <span>Não há plantas para serem exibidas</span>
+            </div>
         </div>
     </div>
 
@@ -59,47 +63,54 @@
 
             try {
                 API_DATA = await api.getById("/plantas-usuarios/user", id);
-                let plantas = API_DATA.data.plantas; 
+                let plantas = API_DATA.data.plantas;
+                 
+                console.log(plantas);
 
-                if (!Array.isArray(plantas)) {
-                    plantas = [plantas];
-                }
+                if (plantas != null){
+                    document.getElementById("semPlantas").style.display = "none";
+                    if (!Array.isArray(plantas)) {
+                        plantas = [plantas];
+                    }
+                    for (const planta of plantas) {
+                        API_DATA = await api.getById("/plantas", planta.IdPlanta);
+                        const detalhes = API_DATA.data.planta;
 
-                for (const planta of plantas) {
-                    API_DATA = await api.getById("/plantas", planta.IdPlanta);
-                    const detalhes = API_DATA.data.planta;
+                        const box = document.createElement('div');
+                        box.classList.add('boxPlanta');
 
-                    const box = document.createElement('div');
-                    box.classList.add('boxPlanta');
-
-                    box.innerHTML = `
-                        <div class="cabecalho">
-                            <div class="row" style="display: flex; justify-content: space-between; align-items: center;">
-                                <div class="col-6"><h2 style="font-size: 28px;">${planta.apelido}</h2></div>
-                                <div class="col-6" style="justify-content: flex-end;">
-                                    <button class="btnDetalhes" data-id="${planta.ID}" data-idPlanta="${planta.IdPlanta}" style="font-size: smaller; background:none; border:none; cursor:pointer;">
-                                        Mais detalhes >
-                                    </button>
+                        box.innerHTML = `
+                            <div class="cabecalho">
+                                <div class="row" style="display: flex; justify-content: space-between; align-items: center;">
+                                    <div class="col-6"><h2 style="font-size: 28px;">${planta.apelido}</h2></div>
+                                    <div class="col-6" style="justify-content: flex-end;">
+                                        <button class="btnDetalhes" data-id="${planta.ID}" data-idPlanta="${planta.IdPlanta}" style="font-size: smaller; background:none; border:none; cursor:pointer;">
+                                            Mais detalhes >
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="detalhes">
-                            <div class="row" style="display: flex; justify-content: flex-start; align-items: center;">
-                                <div class="col-4">
-                                    <div style="font-size:30px; color:#aaa;">No Image</div>
-                                </div>
-                                <div class="col-8" style="margin-left: 20px;">
-                                    <p>ID: ${planta.ID}</p>
-                                    <p>Localização: ${planta.localizacao}</p>
-                                    <p>Nome comum: ${detalhes.nomeComum}</p>
-                                    <p>Nome científico: ${detalhes.nome_cientifico}</p>
+                            <div class="detalhes">
+                                <div class="row" style="display: flex; justify-content: flex-start; align-items: center;">
+                                    <div class="col-4">
+                                        <div style="font-size:30px; color:#aaa;">No Image</div>
+                                    </div>
+                                    <div class="col-8" style="margin-left: 20px;">
+                                        <p>ID: ${planta.ID}</p>
+                                        <p>Localização: ${planta.localizacao}</p>
+                                        <p>Nome comum: ${detalhes.nomeComum}</p>
+                                        <p>Nome científico: ${detalhes.nome_cientifico}</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    `;
+                        `;
 
-                    container.appendChild(box);
+                        container.appendChild(box);
+                    } 
+                } else {
+                    document.getElementById("semPlantas").style.display = "flex";
                 }
+                
             } catch (error) {
                 console.error('Erro ao carregar plantas:', error);
             }
@@ -228,12 +239,18 @@
                     aviso.textContent = "";
 
                     try {
-                        const plantasUsuario = await api.getById("/plantas-usuarios/user", id);
-                        const jaExiste = plantasUsuario.data.plantas.some(p => p.apelido.toLowerCase() === apelido.toLowerCase());
+                        const API_DATA = await api.getById("/plantas-usuarios/user", id);
+                        let plantasUsuario = API_DATA.data.plantas;
+                        if (plantasUsuario != null){
+                            if (!Array.isArray(plantasUsuario)) {
+                                plantasUsuario = [plantasUsuario];
+                            }
+                            const jaExiste = plantasUsuario.some(p => p.apelido.toLowerCase() === apelido.toLowerCase());
 
-                        if (jaExiste) {
-                            aviso.textContent = "⚠️ Já existe uma planta com esse apelido.";
-                            return;
+                            if (jaExiste) {
+                                aviso.textContent = "⚠️ Já existe uma planta com esse apelido.";
+                                return;
+                            }
                         }
 
                         const obj = {

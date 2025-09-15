@@ -99,3 +99,30 @@ p {
 section {
     scroll-margin-top: 100px;
 }
+/* Modal */
+#modal {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: none; /* aberto via JS */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#modalBody {
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 12px;
+    width: auto;         /* largura automática */
+    max-width: 90%;      /* não ultrapassa 90% da tela */
+    min-width: 300px;    /* largura mínima */
+    max-height: 80%;     /* altura máxima */
+    overflow-y: auto;    /* scroll se precisar */
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    box-sizing: border-box;
+}

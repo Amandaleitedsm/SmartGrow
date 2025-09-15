@@ -17,7 +17,7 @@ require_once "api/src/utils/Logger.php";
             return $resultados;
         }
 
-        public function readById (int $idAnalise): AnaliseRecomendacao | null {
+        public function readById (int $idAnalise): array | null {
             $query = 'SELECT ID_recomendacao
                     FROM analiseXrecomendacao
                     WHERE ID_analise = :idAnalise;';
@@ -25,12 +25,12 @@ require_once "api/src/utils/Logger.php";
             $statement = Database::getConnection()->prepare(query: $query);
             $statement->execute([':idAnalise' => $idAnalise]);
 
-            $resultado = $statement->fetch(PDO::FETCH_OBJ);
+            $resultado = $statement->fetchAll(PDO::FETCH_ASSOC);
 
-            if ($resultado == false) {
+            if (!$resultado) {
                 return null;
             } else {
-                return (new AnaliseRecomendacao())->setIDRecomendacao((int)$resultado->ID_recomendacao);
+                return $resultado;
             }
             
         }
@@ -157,5 +157,29 @@ require_once "api/src/utils/Logger.php";
             return (new PlantaUsuario())->setIdUsuario((int)$resultado->IdUsuario);
         }
 
+        public function create($ar):bool{
+            
+            $query = 'INSERT INTO 
+                    analiseXrecomendacao (
+                        ID_analise,
+                        ID_recomendacao
+                    ) 
+                    VALUES (
+                        :ID_analise,
+                        :ID_recomendacao
+                    );';
+
+            $statement =  Database::getConnection()->prepare(query: $query); // impedir sql injection
+            $success = $statement->execute([
+                ':ID_analise' => $ar->getIDAnalise(),
+                ':ID_recomendacao' => $ar->getIDRecomendacao()
+            ]);
+
+            if (!$success) {
+                return false;
+            }
+
+            return true;
+        }
     }
 ?>

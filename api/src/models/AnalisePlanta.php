@@ -6,7 +6,8 @@
             private ?int $ID_planta_usuario = null,
             private ?string $data_analise = null,  // DateTime ou string
             private ?string $status_saude = null,  // 'Boa', 'Regular', 'Ruim', 'Doente'
-            private ?string $status_umidade = null // 'Baixo', 'Alto', 'Regular'
+            private ?string $status_umidade = null, // 'Baixo', 'Alto', 'Regular'
+            private ?string $imagem = null
         ) {}
 
         public function JsonSerialize(): array {
@@ -15,7 +16,8 @@
                 'ID_planta_usuario' => $this->ID_planta_usuario,
                 'data_analise' => $this->data_analise,
                 'status_saude' => $this->status_saude,
-                'status_umidade' => $this->status_umidade
+                'status_umidade' => $this->status_umidade,
+                'imagem' => $this->imagem
             ];
         }
         public function getID(): ?int {
@@ -60,6 +62,15 @@
 
         public function setStatusUmidade(?string $status_umidade): self {
             $this->status_umidade = $status_umidade;
+            return $this;
+        }
+
+        public function getImagem(): ?string {
+            return $this->imagem;
+        }
+
+        public function setImagem(?string $imagem): self {
+            $this->imagem = $imagem;
             return $this;
         }
 

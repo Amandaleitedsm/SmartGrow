@@ -43,6 +43,7 @@ require_once "api/src/middlewares/CondicoesMiddleware.php";
             $this->setUpRecomendacoes();
             $this->setUpCondicoesAtuais();
             $this->setUp404Route();
+            $this->setUpRelatorios();
         }
 
 
@@ -752,7 +753,7 @@ require_once "api/src/middlewares/CondicoesMiddleware.php";
                     $jwtMiddleware = new JWTMiddleware();
                     $claims = $jwtMiddleware->isValidToken();
                     if ($jwtMiddleware->verificarTokenAtivo()) {
-                        $analisePlantaControl = new AnalaisePlantaControl();
+                        $analisePlantaControl = new AnalisePlantaControl();
                         if ($claims->public->Role === "admin"){
                             $analisePlantaControl->index();
                         } else {
@@ -778,7 +779,7 @@ require_once "api/src/middlewares/CondicoesMiddleware.php";
                     if ($jwtMiddleware->verificarTokenAtivo()) {
                         $idUsuario = $claims->private->IdUsuario;
                         (new AnalisePlantaMiddleware())->isValidID((int)$id);
-                        $analisePlantaControl = new AnalaisePlantaControl();
+                        $analisePlantaControl = new AnalisePlantaControl();
 
                         if ($claims->public->Role === "admin"){
                             $analisePlantaControl->showWithoutVerificacao((int)$id);
@@ -814,7 +815,7 @@ require_once "api/src/middlewares/CondicoesMiddleware.php";
                 }
                 exit();
             });
-            $this->router->get('/minhas-plantas/(\d+)/analises', function($id) { #aqui envia o id planta usuario
+            $this->router->get('/minhas-plantas/analises/(\d+)', function($id) { #aqui envia o id planta usuario
                 try{
                     $jwtMiddleware = new JWTMiddleware();
                     $claims = $jwtMiddleware->isValidToken();
@@ -834,8 +835,21 @@ require_once "api/src/middlewares/CondicoesMiddleware.php";
                 }
                 exit();
             });
-            $this->router->post('/minhas-plantas/(\d+)/analises', function($id) {
+            $this->router->post('/minhas-plantas/analises/(\d+)', function($id) {
                 try{
+                    ### Aqui, deve ser alterada a lógica (obs os comments enumerados abaixo)
+                    ### 1. Os dados Json não são mais os dados exigidos pela tabela, mas sim um objeto com as plantas que o usuario quer analisar
+                    ### 1.1 exemplo: {"analise": { "plantasSelect": [1,2,3,...,n] } } ou {"analise": { "plantasSelect": [1] } } ou {"analise": { "plantasSelect": [2,4,5] } }
+                    ### 2. Esse Json recebido será decodificado e enviado para a IA em python (o chat recomendou o uso de flask)
+                    ### 2.1 A IA retornará um Json com os dados da análise cada planta analisada e as respectivas recomendações
+                    ### 3. Esse Json retornado pela IA será decodificado e salvo no banco de dados (aqui sim, os dados serão os exigidos pela tabela)
+                    ### 3.1 o requestBody do php://input é oq vai pra IA, esse pode ser sobrescrito posteriormente para continuar a logica do banco
+
+                    ### ADENDO!!!!!!!! Como a IA se conecta com o código de umidade de eletrônica (para validar os dados de umidade), tentar conectar 
+                    ### a IA com a rota de condições atuais (POST), para atualizar os dados de umidade em tempo ""real""
+                    ### Se necssário, pode apagar a rota de condições atuais (POST) e deixar só a IA fazer isso, cortando mais linhas de código e evitando rotas não implementadas pelo HTML
+                    ### Recomendo ver a lógica de script, evite mudar o css, apenas mexa com a lógica de redirecionamento e requisições
+                    ### FIM DO ADENDO!!!!!!!!!
                     $jwtMiddleware = new JWTMiddleware();
                     $claims = $jwtMiddleware->isValidToken();
                     if ($jwtMiddleware->verificarTokenAtivo()) {
@@ -903,7 +917,7 @@ require_once "api/src/middlewares/CondicoesMiddleware.php";
                 }
                 exit();
             });
-            $this->router->get('/analises/(\d+)/recomendacoes', function($id) {
+            $this->router->get('/analises/recomendacoes/(\d+)', function($id) {
                 try{
                     $jwtMiddleware = new JWTMiddleware();
                     $claims = $jwtMiddleware->isValidToken();
@@ -914,6 +928,31 @@ require_once "api/src/middlewares/CondicoesMiddleware.php";
 
                         (new AnaliseRecControl())
                             ->show((int)$id, $idUsuario);
+                    } else {
+                        $this->notValidToken();
+                    }
+                }
+                catch (Throwable $exception) {
+                    $this->handleError($exception, "Error fetching analysis recommendations");
+                }
+                exit();
+            });
+            $this->router->post('/analises/recomendacoes/(\d+)', function($idUsuario) {
+                try{
+                    $jwtMiddleware = new JWTMiddleware();
+                    $claims = $jwtMiddleware->isValidToken();
+                    if ($jwtMiddleware->verificarTokenAtivo() && $claims->private->IdUsuario === (int)$idUsuario) {
+
+                        $requestBody = file_get_contents('php://input');
+                        $analiseRecMiddleware = new AnaliseRecMiddleware();
+                        $objStd = $analiseRecMiddleware->stringJsonToStdClass($requestBody);
+
+                        $analiseRecMiddleware
+                            ->isValidIdAnalise((int)$objStd->Dados->IdAnalise)
+                            ->isValidIdRecomendacao((int)$objStd->Dados->IdRecomendacao);
+
+                        (new AnaliseRecControl())
+                            ->store($objStd);
                     } else {
                         $this->notValidToken();
                     }
@@ -1134,6 +1173,31 @@ require_once "api/src/middlewares/CondicoesMiddleware.php";
                 }
                 catch (Throwable $exception) {
                     $this->handleError($exception, "Error creating current conditions");
+                }
+                exit();
+            });
+        }
+
+
+
+
+        private function setUpRelatorios(): void {
+            $this->router->post('/relatorios', function($idUsuario) {
+                try{
+                    ### Tem que receber em JSON: Data de inicio, Data de fim, Array de plantas
+                    ### Exemplo: { "dataInicio": "2023-01-01", "dataFim": "2023-12-31", "plantas": [1, 2, 3] }
+                    ### Validar token e idUsuario
+                    ### Alterar script se necessário (arquivo relatorios.php) para poder pegar IDS (não lembro como está a lógica)
+                    ### Verificar necessidade de middleware para validar dados recebidos
+                    ### Gerar relatório em PDF e enviar como resposta para download
+                    ### O relatório deve buscar de análises, analisesXrecomendações e condicoes_planta (utilizando das demais tabelas para relacionar)
+                    ### Existe a rota condicoes atuais (GET) para consulta, podendo, se necessário, ser apagada a rota de GET e incluída a lógica dentro dessa rota AQUI
+                    ### O GET de condicoes não está sendo utilizado, por isso sua implementação para cortar código pode ser util
+                    ### Não se deve chamar rota dentro de rota. Multiplos redirecionamentos, pode gerar problemas, não sei se é ideal.
+                    ### Tentar, se possível, já fazer o HTML, similar ao de analises.php, porém, ao invés de "mais detalhes >", um botão retangular para download
+                }
+                catch (Throwable $exception) {
+                    $this->handleError($exception, "Error fetching analysis recommendations");
                 }
                 exit();
             });
