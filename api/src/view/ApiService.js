@@ -307,3 +307,33 @@ export default class ApiService {
         this.#token = value;
     }
 }
+ // --- FUNÇÃO DE ANÁLISE DE IMAGEM (FORA DA CLASSE) ---
+
+/**
+ * Função para enviar uma imagem para a API de análise e obter o resultado.
+ * @param {File} imageFile - O arquivo de imagem selecionado pelo usuário.
+ * @returns {Promise<Object>} - Uma promessa que resolve com o resultado da análise.
+ */
+export async function analisarImagemComAPI(imageFile, idUsuario) { // Adicionado idPlantaUsuario
+    const apiUrl = 'http://localhost:5000/analisar';
+    
+    const formData = new FormData( );
+    formData.append('imagem', imageFile);
+    formData.append('id_planta_usuario', idUsuario); // Adiciona o ID ao formulário
+
+    try {
+        const response = await fetch(apiUrl, {
+            method: 'POST',
+            body: formData,
+        });
+
+        if (!response.ok) {
+            const errorData = await response.json();
+            throw new Error(errorData.erro || `Erro do servidor: ${response.status}`);
+        }
+        return await response.json();
+    } catch (error) {
+        console.error('Erro ao conectar com a API:', error);
+        return { erro: 'Não foi possível conectar ao servidor de análise. Verifique se ele está rodando.' };
+    }
+}
