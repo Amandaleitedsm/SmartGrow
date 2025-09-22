@@ -49,7 +49,7 @@ CREATE TABLE analise_planta (
     ID_planta_usuario int,
     foreign key (ID_planta_usuario) references planta_usuario(ID) on delete cascade,
     data_analise  datetime default current_timestamp not null,
-    status_saude ENUM('Boa', 'Regular', 'Ruim', 'Doente'),
+    status_saude varchar(255),
     status_umidade ENUM('Baixa', 'Alta', 'Regular'),
     imagem VARCHAR(255)
 );
